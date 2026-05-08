@@ -1,0 +1,4463 @@
+{
+  "metadata": {
+    "model": "gpt-4o",
+    "test_data": "C:\\Users\\lutong\\Desktop\\diffusers\\examples\\controlnet\\Validate\\FSM\\test_cases_5k.json",
+    "timestamp": "2026-05-03 12:59:59",
+    "total_cases": 5000
+  },
+  "fsm_mode": {
+    "total": 5000,
+    "success_count": 4148,
+    "accuracy": 82.96,
+    "failure_by_state": {
+      "awaiting_conclusion": {
+        "total": 335,
+        "failures": 10,
+        "failure_rate": 2.99
+      },
+      "awaiting_data_analysis": {
+        "total": 337,
+        "failures": 4,
+        "failure_rate": 1.19
+      },
+      "awaiting_feature_extraction": {
+        "total": 336,
+        "failures": 12,
+        "failure_rate": 3.57
+      },
+      "awaiting_parameter_config": {
+        "total": 340,
+        "failures": 54,
+        "failure_rate": 15.88
+      },
+      "awaiting_simulation": {
+        "total": 337,
+        "failures": 9,
+        "failure_rate": 2.67
+      },
+      "completed": {
+        "total": 329,
+        "failures": 15,
+        "failure_rate": 4.56
+      },
+      "conclusion_ready": {
+        "total": 330,
+        "failures": 23,
+        "failure_rate": 6.97
+      },
+      "data_analysis_completed": {
+        "total": 337,
+        "failures": 48,
+        "failure_rate": 14.24
+      },
+      "generating_conclusion": {
+        "total": 259,
+        "failures": 146,
+        "failure_rate": 56.37
+      },
+      "idle": {
+        "total": 337,
+        "failures": 201,
+        "failure_rate": 59.64
+      },
+      "processing_initial": {
+        "total": 336,
+        "failures": 103,
+        "failure_rate": 30.65
+      },
+      "running_data_analysis": {
+        "total": 372,
+        "failures": 6,
+        "failure_rate": 1.61
+      },
+      "running_feature_extraction": {
+        "total": 341,
+        "failures": 167,
+        "failure_rate": 48.97
+      },
+      "running_simulation": {
+        "total": 337,
+        "failures": 16,
+        "failure_rate": 4.75
+      },
+      "simulation_completed": {
+        "total": 337,
+        "failures": 38,
+        "failure_rate": 11.28
+      }
+    },
+    "by_intent": {
+      "Abusive": {
+        "total": 524,
+        "success": 433,
+        "accuracy": 82.63
+      },
+      "Irrelevant": {
+        "total": 678,
+        "success": 656,
+        "accuracy": 96.76
+      },
+      "Normal": {
+        "total": 2827,
+        "success": 2282,
+        "accuracy": 80.72
+      },
+      "Paraphrased": {
+        "total": 471,
+        "success": 372,
+        "accuracy": 78.98
+      },
+      "Typos": {
+        "total": 500,
+        "success": 405,
+        "accuracy": 81.0
+      }
+    },
+    "confusion_matrix": {
+      "D": {
+        "D": 625,
+        "?": 76,
+        "I": 13,
+        "A": 2,
+        "Z": 7
+      },
+      "E": {
+        "E": 94,
+        "H": 62,
+        "C": 61,
+        "N": 5,
+        "S": 8,
+        "O": 1,
+        "P": 2,
+        "F": 2,
+        "?": 19,
+        "W": 1
+      },
+      "G": {
+        "G": 550,
+        "?": 62,
+        "I": 11,
+        "D": 8
+      },
+      "I": {
+        "I": 463,
+        "?": 38,
+        "Z": 1
+      },
+      "J": {
+        "J": 299,
+        "?": 19,
+        "D": 7,
+        "S": 1
+      },
+      "L": {
+        "L": 345,
+        "I": 1,
+        "?": 15,
+        "M": 26,
+        "A": 1
+      },
+      "M": {
+        "M": 439,
+        "?": 12,
+        "I": 1,
+        "L": 2,
+        "D": 1
+      },
+      "O": {
+        "O": 233,
+        "?": 13,
+        "I": 1,
+        "S": 1,
+        "Z": 1
+      },
+      "Z": {
+        "Z": 1100,
+        "I": 32,
+        "?": 314,
+        "B": 13,
+        "D": 5,
+        "G": 3,
+        "C": 1,
+        "M": 2,
+        "T": 1
+      }
+    },
+    "sample_failures": [
+      {
+        "case_id": "TC_0092",
+        "current_state": "awaiting_simulation",
+        "user_input": "That simulation was wrong! Do it again!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0093",
+        "current_state": "awaiting_simulation",
+        "user_input": "Rerun the simulation right now!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0097",
+        "current_state": "awaiting_simulation",
+        "user_input": "Run it again, you messed up.",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0100",
+        "current_state": "awaiting_simulation",
+        "user_input": "That's garbage, re-run the simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0183",
+        "current_state": "awaiting_simulation",
+        "user_input": "What's the weather like today?",
+        "expected_symbol": "Z",
+        "actual_symbol": "I",
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0192",
+        "current_state": "awaiting_simulation",
+        "user_input": "How to train for a marathon?",
+        "expected_symbol": "Z",
+        "actual_symbol": "I",
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0200",
+        "current_state": "awaiting_simulation",
+        "user_input": "Run it again! I want a new simulation!",
+        "expected_symbol": "G",
+        "actual_symbol": "D",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0313",
+        "current_state": "awaiting_simulation",
+        "user_input": "That was wrong! Redo the simulation!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0315",
+        "current_state": "awaiting_simulation",
+        "user_input": "Do the data analysis again, it was messed up.",
+        "expected_symbol": "J",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0396",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "What's the weather today?",
+        "expected_symbol": "Z",
+        "actual_symbol": "I",
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0412",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Re-run the data analysis!",
+        "expected_symbol": "J",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0413",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Regenerate the conclusion report!",
+        "expected_symbol": "M",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0514",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Do it again, the entire simulation!",
+        "expected_symbol": "G",
+        "actual_symbol": "D",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0512",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Redo the data analysis, it's all wrong!",
+        "expected_symbol": "J",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0513",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Regenerate the conclusion report, now!",
+        "expected_symbol": "M",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0571",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "I'd like to see what features we have.",
+        "expected_symbol": "D",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0613",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Re-do the simulation from the beginning!",
+        "expected_symbol": "G",
+        "actual_symbol": "D",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0608",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Run it again! That simulation was wrong.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0612",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "That conclusion report was garbage. Regenerate it.",
+        "expected_symbol": "M",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0614",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "I said redo the data analysis, now!",
+        "expected_symbol": "J",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0616",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Run it again, but correctly this time!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0642",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "We have set the building occupancy to 500 and exit widths to 2.5 meters. Run it.",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0648",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Simulate the scenario with 1000 people and 3 exits.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0661",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Can you please run the simulation with these values?",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0686",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I'd like to see what happens if we use these values.",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0693",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "So, I was at the grocery store yesterday and bought some apples, and then I thought about the building evacuation—should we use 2 exits or 3? Anyway, my neighbor's cat is missing, but let's get back to the simulation. I confirm the parameters. Please start the simulation now.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0695",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "My cousin is an architect and he said we need wider doors. So set the exit width to 2.0 meters. Also, have you tried the new coffee shop? Anyway, start the simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0697",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "We have 200 people on floor 1, 150 on floor 2. Evacuation routes are marked. I want to know the total time. By the way, the weather is nice today. Please execute the simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0713",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "What is the weather like today?",
+        "expected_symbol": "Z",
+        "actual_symbol": "I",
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0698",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "The fire safety code requires 1.2 meters per 100 persons. We have 500 people, so we need 6 meters total exit width. That's the input. I trust the default values otherwise. Let's simulate. Also, my car needs an oil change.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0699",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I just had a long meeting about emergency preparedness. The team decided on using 4 exits. Please confirm that. Also, someone ate my lunch from the fridge. Anyway, start the simulation once parameters are set.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0701",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I've attached the floor plan. Exits are at the north and south ends. Occupancy is 450. I think that's all. Did you watch the game last night? Okay, let's proceed to simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0700",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "We collected data from last year's drill. Average speed is 1.2 m/s. Density is 2 persons per sqm. Those are the values. Now, I need to leave soon for a dentist appointment. Can you run the simulation quickly?",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0710",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "run the simulatin agn",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0715",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I think the Lakers will win the championship.",
+        "expected_symbol": "Z",
+        "actual_symbol": null,
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0723",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Redo the simulation! It was wrong.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0725",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Run it again! That simulation was a mess.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0728",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Do the analysis again! The numbers don't make sense.",
+        "expected_symbol": "J",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0731",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "That analysis failed. Re-run it immediately!",
+        "expected_symbol": "J",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0730",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Repeat the simulation with corrected parameters! Now!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0736",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Set the evacuation time to 5 minutes and run it.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0745",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Run the simulation with 100 people and 2 exits.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0749",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Start simulation using my parameters.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0754",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Set capacity to 500 and simulate.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0759",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Simulate with 3 floors and 4 staircases.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0765",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I want to run the simulation with custom values.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0788",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Let's see what happens if we simulate.",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0796",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Okay so I've been tweaking these parameters for ages, trying to get the right balance between evacuation time and cost. I think I finally have it: 4 exits, each 1.8 meters wide, with a flow rate of 1.2 persons per second. Alright, I'm satisfied. Let's simulate.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0798",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "My boss has been breathing down my neck for these numbers. I finally managed to enter the building dimensions, number of floors, and occupant loads. It's a 10-story building with 500 people per floor. Please just run the simulation so I can get the report.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0794",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I remember last time we simulated a similar building and the results were off because we forgot to include the basement. This time I've double-checked everything, added the basement floor, set stair width to 1.2 meters, and made sure the alarm delay is 30 seconds. So I think we are finally ready to simulate now. Can you proceed?",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0802",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "After much deliberation, I've decided to use the following values: total occupants 200, exit width 2.0 m, reaction time 15 s. I think that's realistic. Go ahead and simulate.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0805",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "pleez run the simulatoin",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0826",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Rerun the simulation again, you messed up.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0828",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Do the analysis again, I said!",
+        "expected_symbol": "J",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0836",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Here are the parameters: floor area 5000 sq ft, 200 occupants, 4 exits.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0846",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I am ready to run the simulation now.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0847",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Set evacuation time to 30 seconds, door width 1.2 meters, and proceed.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0860",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I've set the number of floors to 10 and stair capacity to 50. Go ahead.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0878",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Run the simulation using the parameters I provided earlier.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0895",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "So I was thinking about the building layout and the evacuation routes, and I've adjusted the number of occupants based on the floor area. Also, my cat just knocked over a cup of coffee, but that's fine. Anyway, I'm ready to run the simulation now.",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0896",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "After reviewing the fire safety report from last week, I realized we forgot to include the stairwell width. I've updated that parameter now. Also, the weather is nice today. Let's proceed with the simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0898",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "We need to simulate a worst-case scenario with 500 people on the third floor. I've set the flow rate accordingly. By the way, I'm planning a vacation next month. Go ahead and run the simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0902",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I attended a fire safety workshop yesterday and learned about pre-evacuation time. I've added that parameter. Oh, I also got a new phone. Proceed with simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0915",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "What's the weather like?",
+        "expected_symbol": "Z",
+        "actual_symbol": null,
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0904",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I've been going back and forth on the evacuation time estimate. I've settled on 45 seconds for initial reaction time. Anyway, enough talking, run the simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0925",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Redo the simulation!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0926",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Run it again!",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0928",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "That was wrong, redo the sim!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0929",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Do it again!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0933",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Re-generate conclusion!",
+        "expected_symbol": "M",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0935",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Please set the evacuation time to 120 seconds and occupant load to 500.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0934",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I said redo!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0939",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Set max egress width to 2.5 meters and flow rate to 1.2.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0945",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "That simulation was wrong! Redo it now!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0963",
+        "current_state": "simulation_completed",
+        "user_input": "Start data analysis on the collected data.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_0974",
+        "current_state": "simulation_completed",
+        "user_input": "Please start analyzing the data.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1001",
+        "current_state": "simulation_completed",
+        "user_input": "What do the results tell us?",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1007",
+        "current_state": "simulation_completed",
+        "user_input": "Let's dig into the details of the evacuation run.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1019",
+        "current_state": "simulation_completed",
+        "user_input": "pleas procede with data analysis",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1029",
+        "current_state": "simulation_completed",
+        "user_input": "What's the weather forecast for tomorrow?",
+        "expected_symbol": "Z",
+        "actual_symbol": "I",
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1033",
+        "current_state": "simulation_completed",
+        "user_input": "I'm planning a trip to Paris.",
+        "expected_symbol": "Z",
+        "actual_symbol": "I",
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1028",
+        "current_state": "simulation_completed",
+        "user_input": "data analisis plz",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1058",
+        "current_state": "simulation_completed",
+        "user_input": "Time for data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1074",
+        "current_state": "simulation_completed",
+        "user_input": "We should analyze the data now.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1092",
+        "current_state": "simulation_completed",
+        "user_input": "Let's analyze now.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1101",
+        "current_state": "simulation_completed",
+        "user_input": "Let's check the results in detail.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1105",
+        "current_state": "simulation_completed",
+        "user_input": "Can you summarize the key findings?",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1106",
+        "current_state": "simulation_completed",
+        "user_input": "Let's figure out what this means.",
+        "expected_symbol": "I",
+        "actual_symbol": "Z",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1118",
+        "current_state": "simulation_completed",
+        "user_input": "I want to say thanks for running this. The simulation seemed realistic. Now, to get the most out of it, we need to analyze the data. I'm ready for that step. Please proceed with data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1119",
+        "current_state": "simulation_completed",
+        "user_input": "go ahead wid data analysis",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1122",
+        "current_state": "simulation_completed",
+        "user_input": "simulatin compleet now analyse",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1126",
+        "current_state": "simulation_completed",
+        "user_input": "start da analyzis",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1144",
+        "current_state": "simulation_completed",
+        "user_input": "Give me a fresh simulation run!",
+        "expected_symbol": "G",
+        "actual_symbol": "D",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1155",
+        "current_state": "simulation_completed",
+        "user_input": "Run the data analysis now.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1161",
+        "current_state": "simulation_completed",
+        "user_input": "Can we proceed with analyzing the data?",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1163",
+        "current_state": "simulation_completed",
+        "user_input": "Go to data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1165",
+        "current_state": "simulation_completed",
+        "user_input": "Perform data analysis on the simulation results.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1174",
+        "current_state": "simulation_completed",
+        "user_input": "Please go ahead with the data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1183",
+        "current_state": "simulation_completed",
+        "user_input": "Go ahead and analyze.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1195",
+        "current_state": "simulation_completed",
+        "user_input": "I'm ready for the next step: data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1203",
+        "current_state": "simulation_completed",
+        "user_input": "Is there a way to interpret the results?",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1211",
+        "current_state": "simulation_completed",
+        "user_input": "Hey, the simulation just ended. I know we have to do data analysis next. I remember from the training that this step is crucial. So, please proceed with the analysis. Also, I need a coffee. But first, let's get the analysis started.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1214",
+        "current_state": "simulation_completed",
+        "user_input": "I'm in a bit of a hurry. The simulation finished. I need the data analysis done ASAP because we have a safety meeting in an hour. Please run the analysis now. Also, can you print it? Never mind, just analyze.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1216",
+        "current_state": "simulation_completed",
+        "user_input": "Good, simulation complete. Now we need to understand what the numbers mean. Could you please proceed with the data analysis? I'll be here to review the output. Also, remind me to update the floor plans later.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1224",
+        "current_state": "simulation_completed",
+        "user_input": "run data analize",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1229",
+        "current_state": "simulation_completed",
+        "user_input": "i'm redy for data analisys",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1228",
+        "current_state": "simulation_completed",
+        "user_input": "go ahead wit analyz",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1248",
+        "current_state": "simulation_completed",
+        "user_input": "Do it again! The whole thing is wrong.",
+        "expected_symbol": "G",
+        "actual_symbol": "D",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1247",
+        "current_state": "simulation_completed",
+        "user_input": "Regenerate the conclusion report.",
+        "expected_symbol": "M",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1253",
+        "current_state": "simulation_completed",
+        "user_input": "Please move to the next step of data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1259",
+        "current_state": "simulation_completed",
+        "user_input": "What's the weather like today?",
+        "expected_symbol": "Z",
+        "actual_symbol": "I",
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1256",
+        "current_state": "simulation_completed",
+        "user_input": "I'm ready to examine the simulation output now.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1344",
+        "current_state": "awaiting_data_analysis",
+        "user_input": "What's the weather like outside today?",
+        "expected_symbol": "Z",
+        "actual_symbol": "I",
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1350",
+        "current_state": "awaiting_data_analysis",
+        "user_input": "Have you watched the new Marvel movie? It's great.",
+        "expected_symbol": "Z",
+        "actual_symbol": "I",
+        "intent_type": "Irrelevant",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1354",
+        "current_state": "awaiting_data_analysis",
+        "user_input": "Redo the entire analysis! It's all wrong!",
+        "expected_symbol": "J",
+        "actual_symbol": "D",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1362",
+        "current_state": "awaiting_data_analysis",
+        "user_input": "Re-run the simulation with different parameters!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1675",
+        "current_state": "running_data_analysis",
+        "user_input": "Redo the simulation right now!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1695",
+        "current_state": "running_data_analysis",
+        "user_input": "Okay, data analysis is complete. Let's move to the conclusion stage.",
+        "expected_symbol": "L",
+        "actual_symbol": "I",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1716",
+        "current_state": "running_data_analysis",
+        "user_input": "I need the conclusion generated.",
+        "expected_symbol": "L",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1820",
+        "current_state": "running_data_analysis",
+        "user_input": "Data analysis complete. Onto the conclusion step.",
+        "expected_symbol": "L",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1879",
+        "current_state": "running_data_analysis",
+        "user_input": "I'm a bit nervous because this is a critical assessment. The data analysis just finished running. I've double-checked the numbers and they look good. Now I need the conclusion report to present to the board. Please generate it. Also, can you make sure it includes the recommended actions? But first, just generate it.",
+        "expected_symbol": "L",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1913",
+        "current_state": "running_data_analysis",
+        "user_input": "Re-run data analysis, there's an error.",
+        "expected_symbol": "J",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1945",
+        "current_state": "running_simulation",
+        "user_input": "Analyze the data from the simulation.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1956",
+        "current_state": "running_simulation",
+        "user_input": "Move forward with analyzing the data.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1958",
+        "current_state": "running_simulation",
+        "user_input": "Start data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1960",
+        "current_state": "running_simulation",
+        "user_input": "Let's begin analyzing the results.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_1969",
+        "current_state": "running_simulation",
+        "user_input": "I'd like to move to the data analysis stage.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2019",
+        "current_state": "running_simulation",
+        "user_input": "Redo the simulation! It's wrong!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2023",
+        "current_state": "running_simulation",
+        "user_input": "Simulation failed. Re-run immediately!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2026",
+        "current_state": "running_simulation",
+        "user_input": "Re-run the sim! Don't make me wait.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2024",
+        "current_state": "running_simulation",
+        "user_input": "I said restart the whole thing from the beginning!",
+        "expected_symbol": "D",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2049",
+        "current_state": "running_simulation",
+        "user_input": "Start data analysis please.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2081",
+        "current_state": "running_simulation",
+        "user_input": "I'm curious about the numbers we got.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2126",
+        "current_state": "running_simulation",
+        "user_input": "This is wrong. Do it over.",
+        "expected_symbol": "G",
+        "actual_symbol": "D",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2127",
+        "current_state": "running_simulation",
+        "user_input": "Re-run the simulation!",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2220",
+        "current_state": "running_simulation",
+        "user_input": "Redo the simulation!",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2223",
+        "current_state": "running_simulation",
+        "user_input": "That was wrong redo the sim.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2242",
+        "current_state": "running_simulation",
+        "user_input": "I want to redo the simulation again. It was not accurate.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2247",
+        "current_state": "running_feature_extraction",
+        "user_input": "The feature extraction step has finished. Let's continue with the simulation setup.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2244",
+        "current_state": "running_feature_extraction",
+        "user_input": "We've finished extracting the features. What are the next steps?",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2248",
+        "current_state": "running_feature_extraction",
+        "user_input": "All features extracted. Please advise on the simulation defaults.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2249",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction successful. Proceed to the evacuation simulation configuration.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2251",
+        "current_state": "running_feature_extraction",
+        "user_input": "The feature extraction process is finished. Let's move on to simulation.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2253",
+        "current_state": "running_feature_extraction",
+        "user_input": "Our feature extraction is done. Can we start the simulation?",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2255",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction finished. Please present the default simulation settings.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2259",
+        "current_state": "running_feature_extraction",
+        "user_input": "Extraction done. Tell me about the default parameters.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2258",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction complete. Confirm and go to simulation setup.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2257",
+        "current_state": "running_feature_extraction",
+        "user_input": "We have the features. Now what? Show me the simulation defaults.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2261",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction accomplished. Ready for simulation configuration.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2263",
+        "current_state": "running_feature_extraction",
+        "user_input": "Done extracting features. What do we do next?",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2264",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction has been successfully executed. I'm ready for simulation.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2267",
+        "current_state": "running_feature_extraction",
+        "user_input": "Extraction complete. Show me the default values for the simulation.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2269",
+        "current_state": "running_feature_extraction",
+        "user_input": "I confirm completion of feature extraction. Now let's set up the simulation.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2272",
+        "current_state": "running_feature_extraction",
+        "user_input": "All features have been extracted. What's the next step?",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2278",
+        "current_state": "running_feature_extraction",
+        "user_input": "Extraction step complete. Now what? Show me the parameters.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2277",
+        "current_state": "running_feature_extraction",
+        "user_input": "The feature extraction process has ended successfully. Proceed with simulation.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2281",
+        "current_state": "running_feature_extraction",
+        "user_input": "Features extracted successfully. I'm ready to proceed.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2280",
+        "current_state": "running_feature_extraction",
+        "user_input": "I acknowledge feature extraction completion. Let's go to parameter configuration.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2279",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction done. Let's configure the simulation.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2282",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction is over. Please confirm and take me to simulation settings.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2283",
+        "current_state": "running_feature_extraction",
+        "user_input": "We have all features now. Let's move to simulation.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2285",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction done. Proceed to the next step.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2286",
+        "current_state": "running_feature_extraction",
+        "user_input": "The feature extraction has finished. Let's go to the simulation phase.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2288",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction complete. Move to simulation configuration.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2292",
+        "current_state": "running_feature_extraction",
+        "user_input": "Extraction done. Show me the simulation parameters.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2291",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction finished successfully. Let's continue.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2294",
+        "current_state": "running_feature_extraction",
+        "user_input": "I think we have all the features now. What comes next?",
+        "expected_symbol": "E",
+        "actual_symbol": "N",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2295",
+        "current_state": "running_feature_extraction",
+        "user_input": "So, we're done with the first step? What's the plan now?",
+        "expected_symbol": "E",
+        "actual_symbol": "S",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2296",
+        "current_state": "running_feature_extraction",
+        "user_input": "The extraction seems to have wrapped up. Should we look at the simulation settings?",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2297",
+        "current_state": "running_feature_extraction",
+        "user_input": "Are we ready to move forward? I'm eager to see the simulation parameters.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2298",
+        "current_state": "running_feature_extraction",
+        "user_input": "I assume the feature gathering is over. Let's check the defaults for simulation.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2300",
+        "current_state": "running_feature_extraction",
+        "user_input": "We've got the features. Time to set up the simulation, right?",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2299",
+        "current_state": "running_feature_extraction",
+        "user_input": "Okay, that step is behind us. Now for the simulation configuration?",
+        "expected_symbol": "E",
+        "actual_symbol": "S",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2304",
+        "current_state": "running_feature_extraction",
+        "user_input": "So, the feature extraction has wrapped up. Can we talk about simulation parameters now?",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2305",
+        "current_state": "running_feature_extraction",
+        "user_input": "Hey, so I've been working on this building evacuation plan for weeks. The feature extraction step—you know, pulling out all the occupancy data, exit routes, and fire suppression specs—took a while because we had to reconcile conflicting blueprints from the 90s renovation. Anyway, it's finally done. Can we proceed with the simulation? I'd like to see the default parameters you have.",
+        "expected_symbol": "E",
+        "actual_symbol": "N",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2307",
+        "current_state": "running_feature_extraction",
+        "user_input": "You know, this project is really coming together. First we did the site survey, then the occupancy load calculation. The feature extraction was a bit tedious but we got through it. I recall we had a dispute about whether to include the rooftop helipad, but we included it. So, extraction complete. Please confirm and ask me about the simulation defaults. I'll probably want to adjust some.",
+        "expected_symbol": "E",
+        "actual_symbol": "O",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2309",
+        "current_state": "running_feature_extraction",
+        "user_input": "Good morning. I've been thinking about the simulation phase. But first, let's confirm the feature extraction is complete. I remember we had to extract corridor flow capacities and alarm notification zones. That's all set. So, now I'd like you to show me the default parameters for the evacuation simulation. If they look okay, we can proceed.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2308",
+        "current_state": "running_feature_extraction",
+        "user_input": "My team spent all night running the feature extraction scripts. There were some hiccups with the data from the old CAD files, but we manually corrected the sensor placements. Now it's done. I need the system to acknowledge completion and present the default simulation parameters so we can review before running the actual simulation.",
+        "expected_symbol": "E",
+        "actual_symbol": "P",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2310",
+        "current_state": "running_feature_extraction",
+        "user_input": "Let me give you some background: this is for a high-rise office building with mixed occupancy. We started with feature extraction three days ago. The intern accidentally deleted the output once, but we recovered. Anyway, it's finally done. I need to move to the simulation step. Please confirm the extraction completion and ask me about modifying the default parameters.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2314",
+        "current_state": "running_feature_extraction",
+        "user_input": "I know I should have said this earlier, but the feature extraction step is done. I just finished verifying the output. All essential features are captured. Let's move to the simulation configuration. Please confirm the extraction completion and show me the defaults.",
+        "expected_symbol": "E",
+        "actual_symbol": "N",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2311",
+        "current_state": "running_feature_extraction",
+        "user_input": "I've been reviewing the feature extraction results. Everything looks good—egress paths, occupant loads, fire locations. The extraction is definitely complete. I'm ready to proceed with the simulation. Could you confirm the completion and then present the default parameters? I may want to change the evacuation start delay.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2312",
+        "current_state": "running_feature_extraction",
+        "user_input": "To be honest, I wasn't sure about the feature extraction step. We had to pull data from three different BIM models. But after several checks, I'm confident it's done. So now, can we move forward? I need to see the default simulation parameters and decide if we should modify any.",
+        "expected_symbol": "E",
+        "actual_symbol": "F",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2313",
+        "current_state": "running_feature_extraction",
+        "user_input": "We had a meeting yesterday where the stakeholders asked about the simulation. But we couldn't proceed because feature extraction wasn't finished. Well, now it is. We completed it this morning. So, please confirm the completion and present the default parameters for the evacuation simulation. We want to run it as soon as possible.",
+        "expected_symbol": "E",
+        "actual_symbol": "N",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2322",
+        "current_state": "running_feature_extraction",
+        "user_input": "featre extraction is finishd. now what?",
+        "expected_symbol": "E",
+        "actual_symbol": "S",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2323",
+        "current_state": "running_feature_extraction",
+        "user_input": "extration compleate. go to simulation plz",
+        "expected_symbol": "E",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2347",
+        "current_state": "running_feature_extraction",
+        "user_input": "Ready to move on to simulation?",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2349",
+        "current_state": "running_feature_extraction",
+        "user_input": "Show me the default parameters and ask if I want to change anything.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2350",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction finished? Let's go to the next step.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2352",
+        "current_state": "running_feature_extraction",
+        "user_input": "I'm ready for the simulation, what are the default settings?",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2353",
+        "current_state": "running_feature_extraction",
+        "user_input": "Run the simulation with the default parameters.",
+        "expected_symbol": "E",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2355",
+        "current_state": "running_feature_extraction",
+        "user_input": "Did the feature extraction finish successfully?",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2354",
+        "current_state": "running_feature_extraction",
+        "user_input": "Tell me the current parameters and let me decide.",
+        "expected_symbol": "E",
+        "actual_symbol": "S",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2351",
+        "current_state": "running_feature_extraction",
+        "user_input": "Can you confirm the feature extraction is complete?",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2360",
+        "current_state": "running_feature_extraction",
+        "user_input": "Okay, let's continue. Please ask about parameters.",
+        "expected_symbol": "E",
+        "actual_symbol": "P",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2359",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction complete, on to the next phase.",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2362",
+        "current_state": "running_feature_extraction",
+        "user_input": "Yes, feature extraction is done. What now?",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2364",
+        "current_state": "running_feature_extraction",
+        "user_input": "Proceed to simulation with the defaults.",
+        "expected_symbol": "E",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2365",
+        "current_state": "running_feature_extraction",
+        "user_input": "I need to see the parameters before we move on.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2369",
+        "current_state": "running_feature_extraction",
+        "user_input": "Go ahead and run the simulation with the current parameters.",
+        "expected_symbol": "E",
+        "actual_symbol": "H",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      },
+      {
+        "case_id": "TC_2370",
+        "current_state": "running_feature_extraction",
+        "user_input": "Feature extraction done? Good. Now what are the defaults?",
+        "expected_symbol": "E",
+        "actual_symbol": "C",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "FSM"
+      }
+    ]
+  },
+  "baseline_mode": {
+    "total": 5000,
+    "success_count": 3077,
+    "accuracy": 61.54,
+    "failure_by_state": {
+      "awaiting_conclusion": {
+        "total": 335,
+        "failures": 79,
+        "failure_rate": 23.58
+      },
+      "awaiting_data_analysis": {
+        "total": 337,
+        "failures": 149,
+        "failure_rate": 44.21
+      },
+      "awaiting_feature_extraction": {
+        "total": 336,
+        "failures": 42,
+        "failure_rate": 12.5
+      },
+      "awaiting_parameter_config": {
+        "total": 340,
+        "failures": 66,
+        "failure_rate": 19.41
+      },
+      "awaiting_simulation": {
+        "total": 337,
+        "failures": 40,
+        "failure_rate": 11.87
+      },
+      "completed": {
+        "total": 329,
+        "failures": 40,
+        "failure_rate": 12.16
+      },
+      "conclusion_ready": {
+        "total": 330,
+        "failures": 85,
+        "failure_rate": 25.76
+      },
+      "data_analysis_completed": {
+        "total": 337,
+        "failures": 144,
+        "failure_rate": 42.73
+      },
+      "generating_conclusion": {
+        "total": 259,
+        "failures": 169,
+        "failure_rate": 65.25
+      },
+      "idle": {
+        "total": 337,
+        "failures": 231,
+        "failure_rate": 68.55
+      },
+      "processing_initial": {
+        "total": 336,
+        "failures": 157,
+        "failure_rate": 46.73
+      },
+      "running_data_analysis": {
+        "total": 372,
+        "failures": 246,
+        "failure_rate": 66.13
+      },
+      "running_feature_extraction": {
+        "total": 341,
+        "failures": 134,
+        "failure_rate": 39.3
+      },
+      "running_simulation": {
+        "total": 337,
+        "failures": 154,
+        "failure_rate": 45.7
+      },
+      "simulation_completed": {
+        "total": 337,
+        "failures": 187,
+        "failure_rate": 55.49
+      }
+    },
+    "by_intent": {
+      "Abusive": {
+        "total": 524,
+        "success": 441,
+        "accuracy": 84.16
+      },
+      "Irrelevant": {
+        "total": 678,
+        "success": 600,
+        "accuracy": 88.5
+      },
+      "Normal": {
+        "total": 2827,
+        "success": 1558,
+        "accuracy": 55.11
+      },
+      "Paraphrased": {
+        "total": 471,
+        "success": 191,
+        "accuracy": 40.55
+      },
+      "Typos": {
+        "total": 500,
+        "success": 287,
+        "accuracy": 57.4
+      }
+    },
+    "confusion_matrix": {
+      "D": {
+        "D": 576,
+        "J": 8,
+        "E": 5,
+        "I": 2,
+        "?": 36,
+        "G": 12,
+        "B": 82,
+        "M": 1,
+        "Z": 1
+      },
+      "E": {
+        "G": 61,
+        "E": 148,
+        "?": 37,
+        "D": 8,
+        "I": 1
+      },
+      "G": {
+        "G": 574,
+        "J": 6,
+        "?": 25,
+        "I": 1,
+        "E": 16,
+        "L": 1,
+        "O": 1,
+        "D": 7
+      },
+      "I": {
+        "I": 221,
+        "J": 238,
+        "?": 34,
+        "M": 8,
+        "D": 1
+      },
+      "J": {
+        "J": 199,
+        "I": 96,
+        "?": 23,
+        "D": 5,
+        "G": 3
+      },
+      "L": {
+        "L": 101,
+        "M": 269,
+        "?": 15,
+        "J": 1,
+        "O": 2
+      },
+      "M": {
+        "M": 360,
+        "L": 78,
+        "O": 6,
+        "?": 10,
+        "D": 1
+      },
+      "O": {
+        "M": 39,
+        "O": 192,
+        "L": 5,
+        "?": 12,
+        "G": 1
+      },
+      "Z": {
+        "Z": 1106,
+        "D": 59,
+        "G": 55,
+        "M": 122,
+        "J": 24,
+        "?": 74,
+        "L": 7,
+        "B": 13,
+        "I": 1,
+        "O": 9,
+        "E": 1
+      }
+    },
+    "sample_failures": [
+      {
+        "case_id": "TC_0056",
+        "current_state": "awaiting_simulation",
+        "user_input": "We should run the numbers on the evacuation plan.",
+        "expected_symbol": "G",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0059",
+        "current_state": "awaiting_simulation",
+        "user_input": "I'm ready to see the results of the evacuation analysis.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0158",
+        "current_state": "awaiting_simulation",
+        "user_input": "Time to see the simulation results.",
+        "expected_symbol": "G",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0157",
+        "current_state": "awaiting_simulation",
+        "user_input": "I want to know what the model predicts.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0159",
+        "current_state": "awaiting_simulation",
+        "user_input": "I'm ready for the next step.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0162",
+        "current_state": "awaiting_simulation",
+        "user_input": "I want to see the simulation output.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0198",
+        "current_state": "awaiting_simulation",
+        "user_input": "That conclusion was garbage, regenerate the report!",
+        "expected_symbol": "M",
+        "actual_symbol": "L",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0258",
+        "current_state": "awaiting_simulation",
+        "user_input": "We need to see the movement patterns.",
+        "expected_symbol": "G",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0260",
+        "current_state": "awaiting_simulation",
+        "user_input": "I want to see the simulation output.",
+        "expected_symbol": "G",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0254",
+        "current_state": "awaiting_simulation",
+        "user_input": "What's the next step?",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0253",
+        "current_state": "awaiting_simulation",
+        "user_input": "I think we have all the data, now what?",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0255",
+        "current_state": "awaiting_simulation",
+        "user_input": "Should we see the results of the model?",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0262",
+        "current_state": "awaiting_simulation",
+        "user_input": "Proceed to the next phase.",
+        "expected_symbol": "G",
+        "actual_symbol": "I",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0368",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "I think we should move on to preparing the data.",
+        "expected_symbol": "D",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0369",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Let's get the attributes ready.",
+        "expected_symbol": "D",
+        "actual_symbol": "E",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0373",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Let's move forward with the analysis preparation.",
+        "expected_symbol": "D",
+        "actual_symbol": "I",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0366",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "We've gathered the data, what's next?",
+        "expected_symbol": "D",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0371",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "What's the next step after data collection?",
+        "expected_symbol": "D",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0370",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "I'm ready for the next stage.",
+        "expected_symbol": "D",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0372",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Can we start processing?",
+        "expected_symbol": "D",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0406",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Run it again!",
+        "expected_symbol": "D",
+        "actual_symbol": "G",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0434",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "I'm good with feature extraction now.",
+        "expected_symbol": "D",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0469",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Let's see what the building data reveals, start the analysis.",
+        "expected_symbol": "D",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0473",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Proceed to the next analysis step, the one about the building specifics.",
+        "expected_symbol": "D",
+        "actual_symbol": "E",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0575",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "I need you to process the building's parameters.",
+        "expected_symbol": "D",
+        "actual_symbol": "E",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0576",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Proceed with the next analysis step.",
+        "expected_symbol": "D",
+        "actual_symbol": "I",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0573",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "Time to pull out the relevant data.",
+        "expected_symbol": "D",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0623",
+        "current_state": "awaiting_feature_extraction",
+        "user_input": "I think we can move to the next phase now, the data is prepared.",
+        "expected_symbol": "D",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0689",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I'm ready to see the performance of the escape routes.",
+        "expected_symbol": "G",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0692",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I've checked all the inputs. Fire away.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0687",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "What's the next step? Can we compute the results?",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0699",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I just had a long meeting about emergency preparedness. The team decided on using 4 exits. Please confirm that. Also, someone ate my lunch from the fridge. Anyway, start the simulation once parameters are set.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0695",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "My cousin is an architect and he said we need wider doors. So set the exit width to 2.0 meters. Also, have you tried the new coffee shop? Anyway, start the simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0707",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "all paramsetrs ok start sim",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0711",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "i confirm paramiters start sim",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0739",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I confirm the parameters. Start simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0742",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Okay, I'm ready. Proceed.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0791",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Time to crunch numbers, right?",
+        "expected_symbol": "G",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0783",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I think we have enough data, let's see the results.",
+        "expected_symbol": "G",
+        "actual_symbol": "L",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0784",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Can we move to the next step now?",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0789",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I'd like to proceed, please.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0836",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Here are the parameters: floor area 5000 sq ft, 200 occupants, 4 exits.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0837",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Use default values.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0838",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Yes, I'm ready.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0842",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Proceed.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0843",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Confirm and run.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0847",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Set evacuation time to 30 seconds, door width 1.2 meters, and proceed.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0860",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I've set the number of floors to 10 and stair capacity to 50. Go ahead.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0850",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Go ahead, I've set everything.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0852",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Run it.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0871",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I confirm the default parameters. Run simulation.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0886",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "The parameters look good to me.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0885",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I think I'm done setting up.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0890",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I'm all set.",
+        "expected_symbol": "G",
+        "actual_symbol": "O",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0894",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I trust the default values.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0892",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "No need to change anything.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0887",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Whenever you're ready.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0888",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Let's see what happens.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0889",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Fire away.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0891",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Looks good, let's go.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0909",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "i konfirm defalt values",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0907",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "go ahead with paramters",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0893",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Ok, go ahead.",
+        "expected_symbol": "G",
+        "actual_symbol": null,
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0934",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "I said redo!",
+        "expected_symbol": "G",
+        "actual_symbol": "D",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0929",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Do it again!",
+        "expected_symbol": "G",
+        "actual_symbol": "D",
+        "intent_type": "Abusive",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0935",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Please set the evacuation time to 120 seconds and occupant load to 500.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0939",
+        "current_state": "awaiting_parameter_config",
+        "user_input": "Set max egress width to 2.5 meters and flow rate to 1.2.",
+        "expected_symbol": "G",
+        "actual_symbol": "E",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0954",
+        "current_state": "simulation_completed",
+        "user_input": "Begin analyzing the simulation data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0950",
+        "current_state": "simulation_completed",
+        "user_input": "Let's analyze the results.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0952",
+        "current_state": "simulation_completed",
+        "user_input": "Start the data analysis phase.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0960",
+        "current_state": "simulation_completed",
+        "user_input": "Please initiate data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0963",
+        "current_state": "simulation_completed",
+        "user_input": "Start data analysis on the collected data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0964",
+        "current_state": "simulation_completed",
+        "user_input": "We should analyze the simulation results now.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0962",
+        "current_state": "simulation_completed",
+        "user_input": "Proceed with analyzing the simulation output.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0965",
+        "current_state": "simulation_completed",
+        "user_input": "I want to see the data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0967",
+        "current_state": "simulation_completed",
+        "user_input": "Proceed to the data analysis stage.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0948",
+        "current_state": "simulation_completed",
+        "user_input": "Please proceed with data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0966",
+        "current_state": "simulation_completed",
+        "user_input": "Let's analyze the evacuation simulation data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0970",
+        "current_state": "simulation_completed",
+        "user_input": "Run the data analysis now.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0971",
+        "current_state": "simulation_completed",
+        "user_input": "We can start the analysis phase.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0973",
+        "current_state": "simulation_completed",
+        "user_input": "Initiate data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0955",
+        "current_state": "simulation_completed",
+        "user_input": "I'm ready for data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0974",
+        "current_state": "simulation_completed",
+        "user_input": "Please start analyzing the data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0958",
+        "current_state": "simulation_completed",
+        "user_input": "Can we start the analysis?",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0976",
+        "current_state": "simulation_completed",
+        "user_input": "Begin the data analysis process.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0981",
+        "current_state": "simulation_completed",
+        "user_input": "I'm ready to analyze the simulation data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0975",
+        "current_state": "simulation_completed",
+        "user_input": "I would like to analyze the simulation output.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0985",
+        "current_state": "simulation_completed",
+        "user_input": "Let's begin analyzing the data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0990",
+        "current_state": "simulation_completed",
+        "user_input": "Please proceed with data analysis on the simulation output.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0988",
+        "current_state": "simulation_completed",
+        "user_input": "Let's start the data analysis phase.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0977",
+        "current_state": "simulation_completed",
+        "user_input": "Proceed with analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0987",
+        "current_state": "simulation_completed",
+        "user_input": "Proceed with the analysis of simulation results.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0993",
+        "current_state": "simulation_completed",
+        "user_input": "I'd like to see the data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0998",
+        "current_state": "simulation_completed",
+        "user_input": "Start data analysis on the simulation.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1000",
+        "current_state": "simulation_completed",
+        "user_input": "I think it's time to crunch the data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0983",
+        "current_state": "simulation_completed",
+        "user_input": "Start the analysis of the evacuation simulation.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1002",
+        "current_state": "simulation_completed",
+        "user_input": "I'm curious about the patterns in the simulation.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0991",
+        "current_state": "simulation_completed",
+        "user_input": "Continue to data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1003",
+        "current_state": "simulation_completed",
+        "user_input": "Let's see what insights we can draw from the simulation.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1004",
+        "current_state": "simulation_completed",
+        "user_input": "Time to interpret the simulation outcomes.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1005",
+        "current_state": "simulation_completed",
+        "user_input": "I want to examine the performance metrics.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1006",
+        "current_state": "simulation_completed",
+        "user_input": "Can we break down the simulation data?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1001",
+        "current_state": "simulation_completed",
+        "user_input": "What do the results tell us?",
+        "expected_symbol": "I",
+        "actual_symbol": "M",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1008",
+        "current_state": "simulation_completed",
+        "user_input": "I'd like to review the statistics from the simulation.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1012",
+        "current_state": "simulation_completed",
+        "user_input": "We have the evacuation simulation results. I was talking to John about the building's safety features and he mentioned the sprinkler system. But first, let's focus on the data analysis. We need to identify bottlenecks.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0999",
+        "current_state": "simulation_completed",
+        "user_input": "Shall we look at the numbers now?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_0997",
+        "current_state": "simulation_completed",
+        "user_input": "I'm ready for data analysis of the simulation.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1009",
+        "current_state": "simulation_completed",
+        "user_input": "So we have the simulation done. I remember last time we had some issues with the building layout, but the fire drill went smoothly overall. The weather was nice too. Anyway, I think we should now look at the data analysis to see if those evacuation times are acceptable.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1017",
+        "current_state": "simulation_completed",
+        "user_input": "Our evacuation simulation just ended. The results look promising but we need to dig deeper. I suggest we start the data analysis immediately to see if compliance targets are met.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1016",
+        "current_state": "simulation_completed",
+        "user_input": "Alright, the simulation is complete. I need to prepare a report for the safety committee. So we better get the data analysis done. Please initiate it.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1018",
+        "current_state": "simulation_completed",
+        "user_input": "Simulation is done. I remember when we used to do physical drills, it was so chaotic. Technology helps. Now let's move to data analysis to quantify improvements.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1020",
+        "current_state": "simulation_completed",
+        "user_input": "i want too start analisis of the simulashun",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1021",
+        "current_state": "simulation_completed",
+        "user_input": "pkease go to data analisis",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1007",
+        "current_state": "simulation_completed",
+        "user_input": "Let's dig into the details of the evacuation run.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1014",
+        "current_state": "simulation_completed",
+        "user_input": "Simulation done. I think the model worked well, though I wonder if the exit widths were accurate. Anyway, we should perform data analysis to validate our assumptions. Can we start that?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1024",
+        "current_state": "simulation_completed",
+        "user_input": "start anaylsis",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1028",
+        "current_state": "simulation_completed",
+        "user_input": "data analisis plz",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1026",
+        "current_state": "simulation_completed",
+        "user_input": "can we anlyz the data",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1019",
+        "current_state": "simulation_completed",
+        "user_input": "pleas procede with data analysis",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1023",
+        "current_state": "simulation_completed",
+        "user_input": "proceed to data analisis pls",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1027",
+        "current_state": "simulation_completed",
+        "user_input": "procede with anaylsis",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1022",
+        "current_state": "simulation_completed",
+        "user_input": "lets do the datya analysus now",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1049",
+        "current_state": "simulation_completed",
+        "user_input": "Let's proceed with data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1054",
+        "current_state": "simulation_completed",
+        "user_input": "Proceed to data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1058",
+        "current_state": "simulation_completed",
+        "user_input": "Time for data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1052",
+        "current_state": "simulation_completed",
+        "user_input": "Can we start analyzing the data?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1056",
+        "current_state": "simulation_completed",
+        "user_input": "Analyze the data please.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1062",
+        "current_state": "simulation_completed",
+        "user_input": "I want to analyze the results.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1061",
+        "current_state": "simulation_completed",
+        "user_input": "Sure, let's analyze.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1064",
+        "current_state": "simulation_completed",
+        "user_input": "Let's get to data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1057",
+        "current_state": "simulation_completed",
+        "user_input": "I'd like to see the data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1063",
+        "current_state": "simulation_completed",
+        "user_input": "Run the data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1053",
+        "current_state": "simulation_completed",
+        "user_input": "I'm ready for data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1072",
+        "current_state": "simulation_completed",
+        "user_input": "Data analysis, please.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1069",
+        "current_state": "simulation_completed",
+        "user_input": "Let's do the data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1073",
+        "current_state": "simulation_completed",
+        "user_input": "Let's go to data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1078",
+        "current_state": "simulation_completed",
+        "user_input": "Please proceed with data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1083",
+        "current_state": "simulation_completed",
+        "user_input": "Let's analyze the simulation data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1084",
+        "current_state": "simulation_completed",
+        "user_input": "I want to see the analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1068",
+        "current_state": "simulation_completed",
+        "user_input": "I'm ready to review the data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1070",
+        "current_state": "simulation_completed",
+        "user_input": "Can you run the analysis?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1075",
+        "current_state": "simulation_completed",
+        "user_input": "Okay, let's analyze.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1090",
+        "current_state": "simulation_completed",
+        "user_input": "Start data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1085",
+        "current_state": "simulation_completed",
+        "user_input": "Go ahead and analyze.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1079",
+        "current_state": "simulation_completed",
+        "user_input": "I want to proceed with data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1097",
+        "current_state": "simulation_completed",
+        "user_input": "I want to go to data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1099",
+        "current_state": "simulation_completed",
+        "user_input": "I'd like to see what the numbers tell us.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1105",
+        "current_state": "simulation_completed",
+        "user_input": "Can you summarize the key findings?",
+        "expected_symbol": "I",
+        "actual_symbol": "M",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1102",
+        "current_state": "simulation_completed",
+        "user_input": "I want to dive into the metrics.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1100",
+        "current_state": "simulation_completed",
+        "user_input": "Can we examine the simulation output?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1103",
+        "current_state": "simulation_completed",
+        "user_input": "What can we learn from the simulation?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1104",
+        "current_state": "simulation_completed",
+        "user_input": "I'm curious about the patterns in the data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1106",
+        "current_state": "simulation_completed",
+        "user_input": "Let's figure out what this means.",
+        "expected_symbol": "I",
+        "actual_symbol": "D",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1092",
+        "current_state": "simulation_completed",
+        "user_input": "Let's analyze now.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1108",
+        "current_state": "simulation_completed",
+        "user_input": "How about we interpret the simulation data?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1107",
+        "current_state": "simulation_completed",
+        "user_input": "I'd like to review the performance indicators.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1101",
+        "current_state": "simulation_completed",
+        "user_input": "Let's check the results in detail.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1096",
+        "current_state": "simulation_completed",
+        "user_input": "Let's start the analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1120",
+        "current_state": "simulation_completed",
+        "user_input": "proceed to data analyis plz",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1123",
+        "current_state": "simulation_completed",
+        "user_input": "wanna do data anlysis now",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1118",
+        "current_state": "simulation_completed",
+        "user_input": "I want to say thanks for running this. The simulation seemed realistic. Now, to get the most out of it, we need to analyze the data. I'm ready for that step. Please proceed with data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1112",
+        "current_state": "simulation_completed",
+        "user_input": "I appreciate the work done so far. The simulation ran without any errors, which is great. However, I'm concerned about the evacuation times for the upper floors. I'd like to proceed with data analysis to examine that specific aspect. Let's do it.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1117",
+        "current_state": "simulation_completed",
+        "user_input": "The simulation just finished. I was in the middle of another task. But I think it's a good time to proceed with data analysis. Let's look at the flow rates and exit usage. That will help us identify any design flaws.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1126",
+        "current_state": "simulation_completed",
+        "user_input": "start da analyzis",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1127",
+        "current_state": "simulation_completed",
+        "user_input": "ok analyze the data",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1125",
+        "current_state": "simulation_completed",
+        "user_input": "pls proceed with data aanalysis",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Typos",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1151",
+        "current_state": "simulation_completed",
+        "user_input": "Can you start the data analysis?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1150",
+        "current_state": "simulation_completed",
+        "user_input": "Let's analyze the data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1154",
+        "current_state": "simulation_completed",
+        "user_input": "Please analyze the simulation data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1159",
+        "current_state": "simulation_completed",
+        "user_input": "Start the analysis phase.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1152",
+        "current_state": "simulation_completed",
+        "user_input": "I want to see the analysis results.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1160",
+        "current_state": "simulation_completed",
+        "user_input": "Please initiate data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1163",
+        "current_state": "simulation_completed",
+        "user_input": "Go to data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1162",
+        "current_state": "simulation_completed",
+        "user_input": "I would like to analyze the simulation output.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1165",
+        "current_state": "simulation_completed",
+        "user_input": "Perform data analysis on the simulation results.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1168",
+        "current_state": "simulation_completed",
+        "user_input": "Do the data analysis now.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1167",
+        "current_state": "simulation_completed",
+        "user_input": "Proceed to analyze the data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1169",
+        "current_state": "simulation_completed",
+        "user_input": "Let's see the data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1170",
+        "current_state": "simulation_completed",
+        "user_input": "Can you do the analysis?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1161",
+        "current_state": "simulation_completed",
+        "user_input": "Can we proceed with analyzing the data?",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1172",
+        "current_state": "simulation_completed",
+        "user_input": "Start analyzing the data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1173",
+        "current_state": "simulation_completed",
+        "user_input": "We should analyze the simulation data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1175",
+        "current_state": "simulation_completed",
+        "user_input": "It's time for data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1180",
+        "current_state": "simulation_completed",
+        "user_input": "Proceed with analyzing the simulation outcome.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1176",
+        "current_state": "simulation_completed",
+        "user_input": "Initiate analysis of the simulation results.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1179",
+        "current_state": "simulation_completed",
+        "user_input": "I'm ready to analyze the data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1181",
+        "current_state": "simulation_completed",
+        "user_input": "Let's do the analysis now.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1182",
+        "current_state": "simulation_completed",
+        "user_input": "Run the analysis on the collected data.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1187",
+        "current_state": "simulation_completed",
+        "user_input": "Analyze the data from the simulation.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1185",
+        "current_state": "simulation_completed",
+        "user_input": "Please initiate the data analysis step.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1189",
+        "current_state": "simulation_completed",
+        "user_input": "Begin data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1188",
+        "current_state": "simulation_completed",
+        "user_input": "I'd like to start the data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1190",
+        "current_state": "simulation_completed",
+        "user_input": "Time to analyze the results.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1192",
+        "current_state": "simulation_completed",
+        "user_input": "Proceed with the data analysis phase.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1183",
+        "current_state": "simulation_completed",
+        "user_input": "Go ahead and analyze.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1199",
+        "current_state": "simulation_completed",
+        "user_input": "What does the data say? Let's analyze.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1195",
+        "current_state": "simulation_completed",
+        "user_input": "I'm ready for the next step: data analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1186",
+        "current_state": "simulation_completed",
+        "user_input": "Let's proceed with analysis.",
+        "expected_symbol": "I",
+        "actual_symbol": null,
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1194",
+        "current_state": "simulation_completed",
+        "user_input": "Can we analyze the data now?",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Normal",
+        "success": false,
+        "mode": "Baseline"
+      },
+      {
+        "case_id": "TC_1202",
+        "current_state": "simulation_completed",
+        "user_input": "Time to crunch numbers.",
+        "expected_symbol": "I",
+        "actual_symbol": "J",
+        "intent_type": "Paraphrased",
+        "success": false,
+        "mode": "Baseline"
+      }
+    ]
+  },
+  "sequence_mode": {
+    "total": 10,
+    "success_count": 8,
+    "accuracy": 80.0,
+    "failure_by_state": {
+      "awaiting_conclusion": {
+        "total": 1,
+        "failures": 0,
+        "failure_rate": 0.0
+      },
+      "awaiting_data_analysis": {
+        "total": 1,
+        "failures": 0,
+        "failure_rate": 0.0
+      },
+      "awaiting_parameter_config": {
+        "total": 1,
+        "failures": 0,
+        "failure_rate": 0.0
+      },
+      "generating_conclusion": {
+        "total": 2,
+        "failures": 0,
+        "failure_rate": 0.0
+      },
+      "idle": {
+        "total": 2,
+        "failures": 2,
+        "failure_rate": 100.0
+      },
+      "running_data_analysis": {
+        "total": 1,
+        "failures": 0,
+        "failure_rate": 0.0
+      },
+      "running_feature_extraction": {
+        "total": 1,
+        "failures": 0,
+        "failure_rate": 0.0
+      },
+      "running_simulation": {
+        "total": 1,
+        "failures": 0,
+        "failure_rate": 0.0
+      }
+    },
+    "by_intent": {
+      "Normal": {
+        "total": 10,
+        "success": 8,
+        "accuracy": 80.0
+      }
+    },
+    "confusion_matrix": {
+      "E": {
+        "E": 1
+      },
+      "G": {
+        "G": 1
+      },
+      "I": {
+        "I": 1
+      },
+      "J": {
+        "J": 1
+      },
+      "L": {
+        "L": 1
+      },
+      "M": {
+        "M": 1
+      },
+      "Z": {
+        "?": 1,
+        "D": 1,
+        "Z": 2
+      }
+    }
+  },
+  "comparison": {
+    "fsm_accuracy": 82.96,
+    "baseline_accuracy": 61.54,
+    "delta": 21.42,
+    "interpretation": "State machine context injection improves LLM workflow adherence by 21.42 percentage points."
+  }
+}

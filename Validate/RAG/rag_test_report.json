@@ -1,0 +1,1148 @@
+{
+  "metadata": {
+    "answer_model": "gpt-4o",
+    "judge_model": "deepseek-chat",
+    "total_cases": 1000,
+    "timestamp": "2026-05-03 23:22:59"
+  },
+  "rag_mode": {
+    "total": 1000,
+    "in_scope": {
+      "total": 899,
+      "citation_accuracy": 85.43,
+      "numerical_precision": 83.09,
+      "no_hallucination_rate": 89.77,
+      "citation_ok": 768,
+      "numerical_ok": 747,
+      "no_halluc_ok": 807,
+      "all_criteria_met": 80.53
+    },
+    "out_of_scope": {
+      "total": 101,
+      "correct_refusal_rate": 100.0,
+      "refused": 101
+    },
+    "by_category": {
+      "Adversarial": {
+        "total": 50,
+        "citation_accuracy": 96.0,
+        "numerical_precision": 92.0,
+        "no_hallucination_rate": 100.0
+      },
+      "Cross-reference": {
+        "total": 115,
+        "citation_accuracy": 53.91,
+        "numerical_precision": 49.57,
+        "no_hallucination_rate": 60.87
+      },
+      "Direct Match": {
+        "total": 535,
+        "citation_accuracy": 96.26,
+        "numerical_precision": 93.83,
+        "no_hallucination_rate": 96.64
+      },
+      "Scenario-based": {
+        "total": 199,
+        "citation_accuracy": 71.86,
+        "numerical_precision": 71.36,
+        "no_hallucination_rate": 85.43
+      }
+    }
+  },
+  "baseline_mode": {
+    "total": 1000,
+    "in_scope": {
+      "total": 899,
+      "citation_accuracy": 45.05,
+      "numerical_precision": 43.83,
+      "no_hallucination_rate": 49.05,
+      "citation_ok": 405,
+      "numerical_ok": 394,
+      "no_halluc_ok": 441,
+      "all_criteria_met": 41.6
+    },
+    "out_of_scope": {
+      "total": 101,
+      "correct_refusal_rate": 3.96,
+      "refused": 4
+    },
+    "by_category": {
+      "Adversarial": {
+        "total": 50,
+        "citation_accuracy": 30.0,
+        "numerical_precision": 30.0,
+        "no_hallucination_rate": 36.0
+      },
+      "Cross-reference": {
+        "total": 115,
+        "citation_accuracy": 20.0,
+        "numerical_precision": 16.52,
+        "no_hallucination_rate": 19.13
+      },
+      "Direct Match": {
+        "total": 535,
+        "citation_accuracy": 56.26,
+        "numerical_precision": 53.64,
+        "no_hallucination_rate": 58.69
+      },
+      "Scenario-based": {
+        "total": 199,
+        "citation_accuracy": 33.17,
+        "numerical_precision": 36.68,
+        "no_hallucination_rate": 43.72
+      }
+    }
+  },
+  "sample_results": [
+    {
+      "case_id": "RAG_TC_0010",
+      "question": "What is the minimum clear width for door openings to resident sleeping units in Group I-3 that are not required to be accessible units according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "28 inches (711 mm)",
+      "rag_response": "The minimum clear width for door openings to resident sleeping units in Group I-3 that are not required to be accessible units is 28 inches (711 mm) according to the IBC.",
+      "baseline_response": "According to the **2021 International Building Code (IBC)**, the minimum clear width for door openings to resident sleeping units in Group I-3 occupancies that are not required to be accessible units is **28 inches**. \n\nThis requirement is specified in **IBC Section 1010.1.1**, Exception 6, which allows a reduced clear width for doors serving sleeping units in Group I-3 occupancies that are not required to be accessible. \n\nFor accessible units, the minimum clear width would typically be **32 inc",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites the IBC and provides the exact numerical value from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites IBC Section 1010.1.1 Exception 6 and provides the accurate minimum clear width of 28 inches."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0004",
+      "question": "What is the maximum height above the finished floor for the leading edge of a barrier where vertical clearance is less than 80 inches according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "27 inches (686 mm)",
+      "rag_response": "According to the IBC, the leading edge of a barrier provided where vertical clearance is less than 80 inches (2032 mm) shall be located a maximum of 27 inches (686 mm) above the finished floor.",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1003.3.3**, the leading edge of a barrier where the vertical clearance is less than **80 inches** must be located no higher than **27 inches** above the finished floor. This is to ensure that the barrier is detectable by individuals with visual impairments using a cane.\n\n**Reference:** IBC 2021, Section 1003.3.3 (Protruding Objects).",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC, matches the 27-inch value exactly, and contains no fabricated information."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC Section 1003.3.3 and provides the exact height of 27 inches as per the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0006",
+      "question": "What is the minimum design pressure difference across a barrier for smokeproof enclosures using pressurization in sprinklered buildings according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "0.05 in. water column (12.5 N/m²)",
+      "rag_response": "The minimum design pressure difference across a barrier for smokeproof enclosures using pressurization in sprinklered buildings is **0.05 in. water column (12.5 N/m²)**, as per NFPA 101.",
+      "baseline_response": "According to **NFPA 101 (2021 edition), Section 7.5.3.2.2(2)**, the minimum design pressure difference across a barrier for smokeproof enclosures using pressurization in sprinklered buildings is **0.05 inch water column (12.5 Pa)**. \n\nThis ensures that smoke is prevented from entering the stair enclosure during a fire emergency.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact numerical value matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact pressure difference value matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0008",
+      "question": "What is the minimum letter height for a sign on the egress side of a door according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "1 inch (25 mm)",
+      "rag_response": "According to NFPA 101, the minimum letter height for a sign on the egress side of a door is **1 inch (25 mm)**.",
+      "baseline_response": "According to **NFPA 101: Life Safety Code (2021 edition)**, the minimum letter height for signs on the egress side of a door is **1 inch (25 mm)**, as specified in **Section 7.10.8.1**. This applies to signs indicating the direction of egress or exit discharge. \n\nEnsure the sign is also compliant with visibility and legibility requirements outlined in the same section.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact minimum letter height of 1 inch (25 mm) as per the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101, provides the exact minimum letter height of 1 inch (25 mm), and does not fabricate any information."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0003",
+      "question": "How far above the finished floor should the bottom edge of a perimeter wall demarcation line be placed according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Not more than 4 inches (100 mm)",
+      "rag_response": "According to NFPA 101, the bottom edge of a perimeter wall demarcation line shall be placed not more than 4 in. (100 mm) above the finished floor.",
+      "baseline_response": "According to **NFPA 101, Section 7.2.4.3.9.1**, the bottom edge of a perimeter wall demarcation line must be placed **4 to 6 inches (100 to 150 mm)** above the finished floor. This requirement ensures visibility and compliance with egress marking standards.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and matches the ground truth value exactly."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI cites NFPA 101 but gives a wrong range (4-6 inches) instead of the correct 'not more than 4 inches', and the section number appears fabricated."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0009",
+      "question": "What is the minimum fire protection rating for elevator lobby door assemblies according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "1 hour",
+      "rag_response": "According to NFPA 101, elevator lobby door assemblies shall have a minimum 1-hour fire protection rating.",
+      "baseline_response": "According to **NFPA 101: Life Safety Code (2021 edition)**, elevator lobby door assemblies are required to have a **minimum fire protection rating of 1 hour** when the elevator shaft is enclosed in a 1-hour fire-rated barrier. This requirement is outlined in **Section 7.2.1.6.3** and is intended to maintain the integrity of the fire-rated enclosure.\n\nFor buildings with a 2-hour fire-rated elevator shaft enclosure, the door assemblies must also meet the **2-hour fire protection rating** to match ",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and states the minimum 1-hour fire protection rating, matching the ground truth exactly."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites NFPA 101 and provides the 1-hour minimum fire protection rating matching the ground truth, with no fabricated values."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0002",
+      "question": "What is the maximum allowed dead-end corridor length according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "50 feet (15,240 mm)",
+      "rag_response": "According to the International Building Code (IBC), the maximum allowed dead-end corridor length is:\n\n1. **20 feet (6096 mm)** in general.  \n2. **50 feet (15,240 mm)** if specific conditions are met.  \n3. **Unlimited** if the length of the dead-end corridor is less than 2.5 times the least width of the corridor.  \n\nThese provisions are outlined in the [IBC] code references provided.",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, the maximum allowed dead-end corridor length is:\n\n- **20 feet** in most occupancies (**IBC 2021, Section 1020.4**).\n- **50 feet** if the building is equipped throughout with an automatic sprinkler system in accordance with **IBC Section 903.3.1.1**.\n\nAlways verify the specific occupancy and sprinkler system requirements for compliance.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI correctly cites IBC but provides multiple conflicting values (20 ft, 50 ft, unlimited) and includes a fabricated condition about 2.5 times corridor width, making the regulation incorrect and hallucinated."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 0,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites IBC and provides a valid regulation, but the primary numerical value (20 feet) does not match the ground truth (50 feet) for the general maximum dead-end corridor length."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0007",
+      "question": "What percentage of exits can horizontal exits comprise for Group I-3 occupancies according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "100 percent",
+      "rag_response": "According to the IBC, horizontal exits are permitted to comprise **100 percent** of the exits required for occupancies in **Group I-3**.",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, **horizontal exits** can comprise up to **50% of the required exits** for **Group I-3 occupancies**. This is specified in **Section 408.3.6** of the IBC.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and states the exact 100 percent value from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI incorrectly states 50% instead of the correct 100%, and cites Section 408.3.6 which does not contain this provision."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0005",
+      "question": "What is the minimum headroom required along a means of egress path according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "6 ft 8 in. (2030 mm)",
+      "rag_response": "According to NFPA 101, the minimum headroom required along a means of egress path is **6 ft 8 in. (2030 mm)**. [NFPA 101]",
+      "baseline_response": "According to NFPA 101, the minimum headroom required along a means of egress path is 7 feet 6 inches (2285 mm). This requirement ensures that occupants can safely and comfortably evacuate a building without obstruction. The specific reference for this requirement can be found in NFPA 101, Life Safety Code, 2021 edition, section 7.1.5.1.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI response correctly cites NFPA 101 and provides the exact minimum headroom value of 6 ft 8 in. (2030 mm) matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response cites NFPA 101 but gives a wrong headroom value (7 ft 6 in) and a fabricated section number (7.1.5.1), not matching the ground truth of 6 ft 8 in."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0011",
+      "question": "What additional distance can exit access travel distances be increased if the last portion is on an exterior egress balcony according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Up to an additional 100 feet (30,480 mm)",
+      "rag_response": "According to the IBC, exit access travel distances can be increased by up to an additional 100 feet (30,480 mm) if the last portion of the exit access occurs on an exterior egress balcony constructed in accordance with Section 1021. The length of the balcony must be at least equal to the amount of the increase taken. [IBC Table 1017.2]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1017.2.1**, the exit access travel distance can be increased by **50 feet** if the last portion of the exit access is on an exterior egress balcony that complies with Section **1021.2**. \n\nThis allowance applies because the exterior balcony provides a safer egress path due to its open-air nature, reducing the risk of smoke and heat accumulation.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites IBC, provides the exact 100 feet (30,480 mm) increase, and references a real section (Table 1017.2) without fabrication."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI cites IBC Section 1017.2.1 and claims a 50-foot increase, but the ground truth states 100 feet, and the cited section may not be correct for this allowance."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0001",
+      "question": "What is the minimum landing length for a stairway according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "60 inches (1525 mm)",
+      "rag_response": "According to the IBC, the minimum landing length (depth) for a stairway must be equal to the width of the stairway or 48 inches (1219 mm), whichever is less. [IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, the minimum landing length for a stairway must be at least **44 inches** (1118 mm) in the direction of travel. This requirement is specified in **Section 1011.6** of the IBC, which states:\n\n> \"The width of landings shall not be less than the width of the stairways they serve. Every landing shall have a minimum dimension, measured in the direction of travel, of not less than 44 inches (1118 mm).\"\n\nHowever, if the stairway serves an occu",
+      "rag_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 1,
+        "brief_reason": "The AI response cites IBC but gives 48 inches instead of the correct 60 inches, and the rule about stair width is incorrect."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response incorrectly states 44 inches instead of the correct 60 inches, cites a fabricated section (1011.6) for landing length, and hallucinates a reduction to 36 inches for occupant load less than 50."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0012",
+      "question": "What are the minimum width and depth dimensions for a vestibule according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "44 in. (1120 mm) wide and 6 ft (1830 mm) in the direction of travel",
+      "rag_response": "According to NFPA 101, the minimum dimensions for a vestibule are as follows:\n\n- **Width**: Not less than 44 in. (1120 mm) or the required width of the corridor leading to it, whichever is greater.\n- **Depth (direction of travel)**: Not less than 6 ft (1830 mm).\n\n(Code references: NFPA 101)",
+      "baseline_response": "NFPA 101, **Life Safety Code**, does not explicitly specify minimum width and depth dimensions for vestibules. However, it provides general requirements for means of egress components, including doors, corridors, and spaces that may influence vestibule design.\n\nKey considerations include:\n\n1. **Door Swing Clearance**: Doors must not reduce the required width of the vestibule when fully open (NFPA 101, 7.2.1.4.3).\n2. **Minimum Egress Width**: The minimum clear width for egress paths is **36 inche",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "Correctly cites NFPA 101 and provides accurate width and depth values matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 1,
+        "brief_reason": "The AI response incorrectly states that NFPA 101 does not specify vestibule dimensions, contradicting the ground truth which provides specific width and depth requirements."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0013",
+      "question": "When more than one means of egress is required, what percentage of the required capacity must remain if one means of egress is lost according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Not less than 50 percent",
+      "rag_response": "According to NFPA 101, if one means of egress is lost, at least **50 percent** of the required capacity must remain available.",
+      "baseline_response": "According to **NFPA 101 (2021), Section 7.7.3.1.2**, when more than one means of egress is required, the remaining means of egress must provide at least **50% of the required egress capacity** if one means of egress becomes unavailable. This ensures that occupants can still evacuate safely even if one egress path is compromised.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and states the required 50 percent capacity, matching the ground truth without fabrication."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the accurate 50% value matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0015",
+      "question": "What is the minimum intensity for an exit sign illuminated from an external source according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "5 footcandles (54 lux)",
+      "rag_response": "According to IBC, the face of an exit sign illuminated from an external source shall have an intensity of not less than 5 footcandles (54 lux).",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1013.5**, externally illuminated exit signs must have an illumination intensity of **not less than 5 foot-candles (54 lux)** on the face of the sign. \n\nThis ensures the sign is adequately visible in emergency situations.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact numerical values from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC Section 1013.5 and provides the exact minimum intensity of 5 foot-candles (54 lux) matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0020",
+      "question": "What is the minimum width for existing exit discharge paths to a public way according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "28 in. (710 mm)",
+      "rag_response": "The minimum width for existing exit discharge paths to a public way, according to NFPA 101, is **28 inches (710 mm)**.",
+      "baseline_response": "According to NFPA 101, the minimum width for existing exit discharge paths to a public way is generally 36 inches (915 mm). This requirement ensures that the path is wide enough to accommodate the flow of occupants during an evacuation. For specific details and any exceptions, refer to NFPA 101, Section 7.7.3.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact minimum width of 28 inches (710 mm) matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response incorrectly states 36 inches instead of the correct 28 inches, cites a fabricated section 7.7.3, and provides a wrong numerical value."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0017",
+      "question": "What is the minimum clear aisle capacity per occupant served according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "0.20 inch (5.1 mm)",
+      "rag_response": "According to the International Building Code (IBC), the minimum clear aisle capacity per occupant served is **0.20 inch (5.1 mm)**. [IBC]",
+      "baseline_response": "According to the International Building Code (IBC) 2021, the minimum clear aisle capacity is 0.2 inches per occupant for level or ramped aisles and 0.3 inches per occupant for stairways. This is specified in Section 1005.3.2 for egress components other than stairways and Section 1005.3.1 for stairways.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact numerical value from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact numerical value of 0.2 inches per occupant for level/ramped aisles, matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0014",
+      "question": "What is the maximum collapsing force for revolving door assemblies under power failure according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "130 lbf (580 N)",
+      "rag_response": "According to NFPA 101, the maximum collapsing force for revolving door assemblies under conditions of power failure is **130 lbf (580 N)**. \n\nCode reference: [NFPA 101] \"The collapsing force for revolving door assemblies shall be reduced to a force not to exceed 130 lbf (580 N) under conditions of power failure...\"",
+      "baseline_response": "According to **NFPA 101 (2021 edition), Section 7.2.1.10.1.2**, revolving door assemblies must be designed so that under a power failure or manual operation, the collapsing force required to fold the door leaves into a book-fold position does not exceed **130 pounds (578 N)**. \n\nThis ensures that the doors can be easily collapsed to allow safe egress during emergencies.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites NFPA 101, provides the exact numerical value 130 lbf (580 N) matching the ground truth, and includes no fabricated information."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites NFPA 101 and provides the numerical value 130 pounds (578 N), which matches the ground truth of 130 lbf (580 N) within 1% tolerance."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0019",
+      "question": "What is the maximum required ramp landing depth in the direction of travel if the ramp is not part of an accessible route according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "48 in. (1220 mm)",
+      "rag_response": "According to NFPA 101, if the ramp is not part of an accessible route, the maximum required ramp landing depth in the direction of travel is **48 inches (1220 mm)**. \n\n[Reference: NFPA 101]",
+      "baseline_response": "According to **NFPA 101 (2021), Section 7.2.5.4.2**, the minimum depth of a landing in the direction of travel for ramps **not part of an accessible route** is required to be **equal to the width of the ramp**. There is no specific maximum depth stated, as the requirement focuses on ensuring the landing is at least as wide as the ramp itself.\n\nFor ramps that **are part of an accessible route**, additional requirements from accessibility standards (e.g., ADA or ICC/ANSI A117.1) may apply.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact numerical value from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 1,
+        "brief_reason": "The AI response cites NFPA 101 but incorrectly states the requirement as minimum depth equal to ramp width, while the ground truth specifies a maximum depth of 48 inches."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0016",
+      "question": "What height must an opaque visual obstruction be for outside stairs more than 36 ft above ground according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Not less than 48 in. (1220 mm)",
+      "rag_response": "According to NFPA 101, outside stairs more than 36 ft (11 m) above the finished ground level must be provided with an opaque visual obstruction not less than 48 in. (1220 mm) in height.",
+      "baseline_response": "According to **NFPA 101 (2021), Section 7.2.2.6.3.2**, for outside stairs that are more than **36 feet above the ground**, an **opaque visual obstruction** must be provided to a height of at least **42 inches**. This is intended to reduce the perception of height and enhance safety for occupants using the stairs.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact height requirement of 48 in. (1220 mm) matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response cites a fabricated section number (7.2.2.6.3.2) and gives an incorrect height of 42 inches instead of the required 48 inches."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0018",
+      "question": "What is the minimum aggregate width for each revolving door according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "36 inches (914 mm)",
+      "rag_response": "According to IBC, the minimum aggregate width for each revolving door is **36 inches (914 mm)**. [IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1010.1.4.1**, the minimum aggregate width of revolving doors is **36 inches (914 mm)**. Additionally, each revolving door must be credited with providing no more than **50 percent of the required egress capacity**.\n\nFor egress purposes, a side-hinged swinging door must also be located within **10 feet (3048 mm)** of the revolving door to serve as an alternative means of egress. \n\nAlways confirm compliance with local amendment",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact minimum aggregate width of 36 inches (914 mm) matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC Section 1010.1.4.1 and provides the exact minimum aggregate width of 36 inches (914 mm) matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0023",
+      "question": "What is the minimum clear width at and below handrails for ship's ladders according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "20 inches (508 mm)",
+      "rag_response": "According to IBC, the minimum clear width at and below the handrails for ship's ladders shall be **20 inches (508 mm)**. [IBC]",
+      "baseline_response": "According to the **2021 International Building Code (IBC)**, Section **1011.15**, ship's ladders are required to have a **minimum clear width of 20 inches (508 mm)** at and below the handrails. \n\nThis ensures adequate clearance for safe passage while using the ladder.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact minimum clear width of 20 inches (508 mm) as per the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC Section 1011.15 and provides the exact minimum clear width of 20 inches (508 mm) matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0022",
+      "question": "What is the minimum clear opening height for door openings within a dwelling or sleeping unit according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "78 inches (1981 mm)",
+      "rag_response": "According to the IBC, door openings within a dwelling unit or sleeping unit must have a minimum clear opening height of **78 inches (1981 mm)**. [IBC]",
+      "baseline_response": "According to the **2021 International Building Code (IBC)**, Section **1010.1.1**, the minimum clear opening height for door openings within a dwelling or sleeping unit is **78 inches** (6 feet 6 inches). \n\nThis requirement ensures accessibility and safe egress within residential spaces.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact minimum clear opening height of 78 inches (1981 mm) matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC Section 1010.1.1 and provides the exact minimum clear opening height of 78 inches."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0021",
+      "question": "What slope in the direction of travel requires ramp requirements according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Exceeding 1 in 20",
+      "rag_response": "According to NFPA 101, a walking surface in the direction of travel requires ramp requirements if the slope exceeds **1 in 20**. (NFPA 101)",
+      "baseline_response": "According to **NFPA 101, Life Safety Code (2021 edition)**, a walking surface with a slope greater than **1:20 (5%)** in the direction of travel is considered a ramp and must comply with ramp requirements. \n\nRefer to **NFPA 101 Section 7.2.5.2** for detailed ramp design and construction requirements.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact slope threshold of 1 in 20, matching the ground truth without any fabricated information."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact slope threshold of 1:20, matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0024",
+      "question": "What is the maximum height from the floor for the bottom of an emergency escape and rescue opening according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "44 inches (1118 mm)",
+      "rag_response": "According to IBC, the bottom of the clear opening for an emergency escape and rescue opening shall not be greater than 44 inches (1118 mm) measured from the floor. [IBC]",
+      "baseline_response": "According to the International Building Code (IBC) 2021, the maximum height from the floor to the bottom of the clear opening of an emergency escape and rescue opening is **44 inches**. This requirement is specified in **Section 1030.3**.\n\nReference:  \nIBC 2021, Section 1030.3 - \"The bottom of the clear opening shall not be greater than 44 inches (1118 mm) measured from the floor.\"",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "Correctly cites IBC and provides the exact height of 44 inches (1118 mm) matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "Correctly cites IBC Section 1030.3 with the exact 44-inch value matching ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0027",
+      "question": "What fire-resistance rating is required for interior exit stairway enclosures connecting four or more stories according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "2 hours",
+      "rag_response": "According to the IBC, interior exit stairway enclosures connecting four or more stories must have a fire-resistance rating of not less than **2 hours**. [IBC]",
+      "baseline_response": "According to the **2021 International Building Code (IBC)**, interior exit stairway enclosures connecting **four or more stories** are required to have a **2-hour fire-resistance rating**. For enclosures connecting **less than four stories**, a **1-hour fire-resistance rating** is required.\n\nThis requirement is specified in **IBC Section 1023.2**.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact 2-hour rating from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "Correctly cites IBC Section 1023.2 and provides the accurate 2-hour rating."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0025",
+      "question": "By how much can a door in the fully open position reduce a required dimension according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Not more than 7 inches (178 mm)",
+      "rag_response": "According to the IBC, a door in the fully open position shall not reduce a required dimension by more than 7 inches (178 mm). [IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, a door in the fully open position is permitted to reduce the required width of a means of egress by a maximum of **7 inches** (178 mm). This is specified in **IBC Section 1005.7.1**:\n\n> *\"Doors, when fully open, shall not reduce the required means of egress width by more than 7 inches (178 mm).\"* \n\nThis ensures that the door does not excessively obstruct the egress path when open.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites IBC and provides the exact numerical value matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC, provides the exact numerical value of 7 inches (178 mm), and does not fabricate any references."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0029",
+      "question": "What is the maximum slope allowed for the walking surface of treads and landings according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "One unit vertical in 48 units horizontal (2 percent slope)",
+      "rag_response": "According to the International Building Code (IBC), the walking surface of treads and landings of a stairway shall not be sloped steeper than one unit vertical in 48 units horizontal (2 percent slope) in any direction. \n\nCode reference: [IBC]",
+      "baseline_response": "According to the International Building Code (IBC) 2021, the maximum slope allowed for the walking surface of treads and landings is **1:48** (approximately 2%). This requirement ensures that the surface is essentially level to prevent tripping hazards.\n\n**Code Reference:** IBC 2021, Section 1011.5.2 - \"Walking surface.\"",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and matches the ground truth slope value exactly."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites IBC 2021, Section 1011.5.2 and provides the accurate 1:48 (2%) slope."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0031",
+      "question": "What is the required clear floor area per person for existing bridges serving as horizontal exits according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "3 ft² (0.28 m²) per person",
+      "rag_response": "According to NFPA 101, existing bridges serving as horizontal exits must have a clear floor area of **3 ft² (0.28 m²) per person** to accommodate the occupant load. \n\n(Code reference: NFPA 101)",
+      "baseline_response": "According to **NFPA 101: Life Safety Code (2021 edition)**, Section **7.2.4.3.1**, existing bridges serving as horizontal exits must provide a minimum clear floor area of **3 square feet (0.28 square meters) per person**. \n\nThis requirement ensures adequate space for occupants during evacuation.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact numerical value from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact numerical value from the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0026",
+      "question": "What is the maximum allowed variation in elevation due to differences in finish materials according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "0.5 inches (12.7 mm)",
+      "rag_response": "The maximum allowed variation in elevation due to differences in finish materials is **0.5 inches (12.7 mm)**, according to the IBC. [IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1010.1.5**, the maximum allowed variation in elevation due to differences in finish materials is **1/4 inch (6.4 mm)**. If the elevation difference is greater than 1/4 inch but less than 1/2 inch (12.7 mm), it must be beveled with a slope not steeper than 1:2.\n\nFor elevation differences greater than 1/2 inch, a ramp complying with Section **1012** is required.\n\nThis ensures safe transitions between surfaces and minimizes trip",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact numerical value from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response cites IBC Section 1010.1.5 and gives 1/4 inch as the maximum, which contradicts the ground truth of 0.5 inches, and includes fabricated details about beveling and ramp requirements."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0032",
+      "question": "What is the maximum dead-end corridor length for Group I-2, Condition 2 occupancies not serving patient rooms according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "30 feet (9144 mm)",
+      "rag_response": "According to the IBC, the maximum dead-end corridor length for Group I-2, Condition 2 occupancies not serving patient rooms or patient treatment spaces is 30 feet (9144 mm).",
+      "baseline_response": "According to the **2021 International Building Code (IBC)**, the maximum dead-end corridor length for **Group I-2, Condition 2 occupancies** not serving patient rooms is **50 feet**. This is specified in **Section 1020.4, Exception 2**.\n\nReference:  \nIBC 2021, Section 1020.4, Exception 2",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC, provides the exact 30 feet (9144 mm) value, and includes no fabricated information."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response incorrectly states 50 feet instead of the correct 30 feet, and the cited section (1020.4, Exception 2) is fabricated or inaccurate for this specific requirement."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0030",
+      "question": "What is the minimum clear aisle width for Group B and M occupancies determined by according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Section 1005.1 for the occupant load served, but not less than that required for corridors by Section 1020.3",
+      "rag_response": "The minimum clear aisle width for Group B and M occupancies is determined by **Section 1005.1** for the occupant load served, but it must be **not less than the width required for corridors by Section 1020.3**, according to the IBC.",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, the minimum clear aisle width for **Group B (Business)** and **Group M (Mercantile)** occupancies is determined based on the occupant load served by the aisle:\n\n1. **Occupant load of 50 or fewer**: Minimum clear aisle width is **36 inches** (IBC Section 1018.3).\n2. **Occupant load of more than 50**: Minimum clear aisle width is **44 inches** (IBC Section 1018.3).\n\nThese requirements ensure safe egress during an evacuation. Always verif",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI response correctly cites IBC Sections 1005.1 and 1020.3, matches the ground truth text exactly, and contains no fabricated information."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "AI response cites IBC Section 1018.3 with specific widths, but ground truth requires Section 1005.1 and 1020.3, and the AI's numerical values are not mentioned in the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0028",
+      "question": "What is the maximum occupant load for an occupied exterior area according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "300 occupants",
+      "rag_response": "According to IBC, the maximum occupant load for an occupied exterior area shall not exceed **300 occupants**.",
+      "baseline_response": "According to the **2021 International Building Code (IBC)**, the maximum occupant load for an occupied exterior area is determined using the same method as interior spaces, based on the **occupant load factor** from **Table 1004.5**. For example:\n\n- **Unconcentrated assembly (chairs only)**: 15 net square feet per person.\n- **Concentrated assembly (standing space)**: 5 net square feet per person.\n\nThe specific occupant load factor depends on the use and configuration of the exterior area. The to",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact numerical value of 300 occupants matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the correct maximum occupant load of 300 in the example, matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0033",
+      "question": "What is the occupant load factor for general- and high-hazard industrial use according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "100 gross square feet (9.3 square meters) per person",
+      "rag_response": "According to NFPA 101, the occupant load factor for general- and high-hazard industrial use is **100 gross square feet (9.3 square meters) per person**.",
+      "baseline_response": "According to **NFPA 101: Life Safety Code (2021 edition)**, the occupant load factor for industrial use is as follows:\n\n- **General industrial use**: **100 ft² per person** (9.3 m² per person)  \n- **High-hazard industrial use**: **200 ft² per person** (18.6 m² per person)  \n\nThese values are specified in **Table 7.3.1.2 of NFPA 101**.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "Correctly cites NFPA 101 and provides the exact occupant load factor from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 0,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites NFPA 101 and provides the general industrial value matching ground truth, but incorrectly states high-hazard industrial as 200 ft² per person instead of the same 100 ft² per person."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0034",
+      "question": "What is the minimum ceiling height in existing buildings according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "7 ft (2135 mm)",
+      "rag_response": "According to NFPA 101, in existing buildings, the minimum ceiling height shall be 7 ft (2135 mm) from the floor, with projections from the ceiling not less than 6 ft 8 in. (2030 mm), with a tolerance of -3/4 in. (-19 mm). \n\n[Reference: NFPA 101]",
+      "baseline_response": "According to **NFPA 101 (2021), Section 7.1.5.1**, the minimum ceiling height in existing buildings is **7 feet 6 inches (2285 mm)**. However, projections from structural elements, such as beams, are permitted to reduce the height to **6 feet 8 inches (2030 mm)**, provided they do not obstruct the means of egress. \n\nAlways verify specific occupancy requirements, as some chapters may have additional provisions.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 0,
+        "brief_reason": "The AI correctly cites NFPA 101 and provides the correct minimum ceiling height, but adds a fabricated tolerance value (-3/4 in) not present in the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response cites NFPA 101 but gives a wrong minimum height (7 ft 6 in vs 7 ft) and fabricates a specific section number (7.1.5.1) and a false exception about 6 ft 8 in projections."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0035",
+      "question": "What is the minimum fire protection rating for openings in barriers separating an area of refuge according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "20 minutes",
+      "rag_response": "According to NFPA 101, openings in barriers separating an area of refuge from the remainder of the story shall have not less than a **20-minute fire protection rating**.",
+      "baseline_response": "According to **NFPA 101 (2021), Section 7.2.12.2.3**, openings in barriers separating an area of refuge must be protected by fire door assemblies with a **minimum fire protection rating of 1 hour**. These doors must also comply with **NFPA 80** for installation and maintenance. \n\nThis ensures the area of refuge is adequately protected from fire and smoke for the required duration.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact 20-minute fire protection rating from the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response incorrectly states a 1-hour rating instead of the correct 20 minutes and cites a fabricated section number."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0036",
+      "question": "What is the maximum credit allowed for revolving doors used as a component of a means of egress according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "50 percent of the minimum width or required capacity",
+      "rag_response": "According to the International Building Code (IBC), revolving doors used as a component of a means of egress shall not be given credit for more than **50 percent of the minimum width or required capacity**. Additionally, each revolving door is credited with a capacity based on not more than a **50-person occupant load**. \n\n[IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1010.1.4.1**, revolving doors are permitted as a component of a means of egress, but the maximum credit allowed for their capacity is **50 persons per door**. \n\nAdditionally, revolving doors must comply with specific operational and dimensional requirements to qualify as part of the means of egress. For example, they must be capable of collapsing under certain forces to allow free egress in emergencies.\n\nAlways verify complia",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and matches the ground truth value of 50 percent of the minimum width or required capacity, with no fabricated information."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 1,
+        "brief_reason": "The AI cites IBC Section 1010.1.4.1 but gives '50 persons per door' instead of the correct '50 percent of the minimum width or required capacity', and the citation is not approximately correct."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0037",
+      "question": "How many handrails are required for stepped aisles with seating on one side and a width of 74 inches or greater according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Two handrails",
+      "rag_response": "According to IBC, stepped aisles with seating on one side and a width of 74 inches (1880 mm) or greater require **two handrails**. \n\n[IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2018**, Section **1029.13.1**, stepped aisles with a width of **74 inches or greater** and seating on one side are required to have **two handrails**. These handrails must be located on each side of the aisle.\n\nFor reference:\n- **IBC 2018, Section 1029.13.1**: \"Aisles with seating on one side shall have a handrail on the side of the aisle opposite the seating where the aisle width exceeds 74 inches.\"\n\nThis ensures safe egress and accessibility",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites IBC, matches the ground truth of two handrails, and does not fabricate any references."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC Section 1029.13.1 and states the required two handrails for stepped aisles with seating on one side and width ≥74 inches."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0039",
+      "question": "What is the minimum clear width for existing stairs and landings measured at and below handrail height according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "37 inches (940 mm)",
+      "rag_response": "According to NFPA 101, the minimum clear width for existing stairs and landings, measured at and below handrail height, is 37 inches (940 mm).",
+      "baseline_response": "According to **NFPA 101 (2021), Section 7.2.2.2.1.2**, the minimum clear width for existing stairs and landings, measured at and below the handrail height, is **36 inches**. \n\nThis requirement ensures adequate egress capacity for occupants during evacuation.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact minimum clear width of 37 inches (940 mm) as per the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response cites NFPA 101 but gives 36 inches instead of the correct 37 inches, and the section number 7.2.2.2.1.2 is fabricated."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0038",
+      "question": "What is the minimum depth of a landing measured parallel to the direction of travel according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Equal to the width of the stairway or 48 inches (1219 mm), whichever is less",
+      "rag_response": "According to the IBC, the minimum depth of a landing measured parallel to the direction of travel shall be equal to the width of the stairway or 48 inches (1219 mm), whichever is less. [IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1010.6.4**, the minimum depth of a landing measured parallel to the direction of travel must be **48 inches (1219 mm)**. \n\nThis requirement ensures safe and adequate space for occupants to maneuver during egress.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and matches the ground truth value exactly."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 1,
+        "brief_reason": "The AI cites IBC 2021 Section 1010.6.4 but gives only 48 inches, missing the alternative 'equal to the width of the stairway or 48 inches, whichever is less' from the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0041",
+      "question": "What is the maximum force required to set a door in motion in the direction of travel according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "30 lbf (133 N)",
+      "rag_response": "According to NFPA 101, the maximum force required to set a door in motion in the direction of travel is **30 lbf (133 N)**. \n\nReference: [NFPA 101]",
+      "baseline_response": "According to **NFPA 101 (2021), Section 7.2.1.4.5.1**, the maximum force required to set a door in motion in the direction of egress travel is **30 pounds (133 N)**. \n\nAdditionally, once the door is in motion, the force required to swing the door to a full open position must not exceed **15 pounds (67 N)**, as stated in **Section 7.2.1.4.5.2**. \n\nThese requirements ensure that doors are operable without excessive effort during an emergency.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI response correctly cites NFPA 101 and provides the exact numerical value of 30 lbf (133 N) matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites NFPA 101 and provides the exact maximum force of 30 lbf (133 N) as in the ground truth, with no fabricated information."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0040",
+      "question": "What is the maximum collapsing force for revolving door assemblies not used as a component of a means of egress according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "180 lbf (800 N)",
+      "rag_response": "According to NFPA 101, revolving door assemblies not used as a component of a means of egress shall have a collapsing force not exceeding 180 lbf (800 N) applied at a point 3 in. (75 mm) from the outer edge of the outer wing stile and 40 in. (1015 mm) above the floor.",
+      "baseline_response": "According to **NFPA 101 (2021), Section 7.2.1.10.1.2**, revolving door assemblies that are **not used as a component of a means of egress** must be designed to collapse under a force of **130 lbf (578 N)** or less applied at the outer edge of a wing. \n\nThis ensures that the door can be collapsed easily in an emergency, even if it is not part of the designated egress path.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact collapsing force of 180 lbf (800 N) matching the ground truth, with no fabricated information."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response cites NFPA 101 but gives a force of 130 lbf (578 N) instead of the correct 180 lbf (800 N), and the section number appears fabricated."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0042",
+      "question": "For doors serving equipment spaces with an occupant load of five or less, what is the maximum difference in landing height allowed on one side of the door according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "7 inches (178 mm)",
+      "rag_response": "According to the IBC, doors serving equipment spaces with an occupant load of five or less are permitted to have a landing on one side that is not more than **7 inches (178 mm)** above or below the landing on the egress side of the door. \n\n[IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1010.1.5**, for doors serving spaces with an occupant load of **five or fewer**, the maximum difference in landing height on one side of the door is **7 inches (178 mm)**. \n\nThis exception applies to accommodate minor elevation changes in such low-occupancy spaces.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact 7 inches (178 mm) value matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "Correctly cites IBC Section 1010.1.5 and provides the exact 7-inch value matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0043",
+      "question": "What is the maximum travel distance permitted from a high-hazard contents area to the room door for a single means of egress according to NFPA 101?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "25 ft (7620 mm)",
+      "rag_response": "According to NFPA 101, the maximum travel distance permitted from a high-hazard contents area to the room door for a single means of egress is **25 ft (7620 mm)**. \n\n[Reference: NFPA 101]",
+      "baseline_response": "According to **NFPA 101: Life Safety Code (2021 edition)**, the maximum travel distance permitted from a high-hazard contents area to the room door for a single means of egress is **50 feet**. \n\nThis is specified in **Section 42.2.5.2.1**, which addresses travel distance limitations for high-hazard contents areas. High-hazard areas are defined as spaces containing contents that are likely to burn with extreme rapidity or from which explosions are likely.\n\nLet me know if you need further clarific",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites NFPA 101 and provides the exact numerical value matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response incorrectly states 50 feet instead of the correct 25 feet and cites a fabricated section number (42.2.5.2.1) that does not exist in NFPA 101."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0045",
+      "question": "What is the minimum headroom required when door closers and stops are installed according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "78 inches (1981 mm)",
+      "rag_response": "According to the IBC, door closers and stops shall not reduce headroom to less than **78 inches (1981 mm)**. [IBC]",
+      "baseline_response": "According to the International Building Code (IBC) 2021, the minimum headroom required when door closers and stops are installed is 78 inches (1981 mm) above the floor or landing. This requirement is specified in Section 1003.3.1, which addresses projections into the required headroom.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites IBC and provides the exact headroom value of 78 inches (1981 mm) matching the ground truth without any fabricated details."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "Correctly cites IBC and provides the exact headroom value of 78 inches (1981 mm) matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0044",
+      "question": "What is the maximum length of a dead-end corridor according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "20 feet (6096 mm)",
+      "rag_response": "According to the International Building Code (IBC), the maximum length of a dead-end corridor is **50 feet (15,240 mm)**. [IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, the maximum length of a dead-end corridor is generally **20 feet** (Section 1020.4). However, this limit can be extended to **50 feet** if the building is equipped throughout with an automatic sprinkler system in accordance with **IBC Section 903.3.1.1**.\n\n### Code Reference:\n- **IBC 2021 Section 1020.4**: Dead-end corridors shall not exceed 20 feet in length.\n- Exception: The length may be increased to 50 feet in buildings equipped wi",
+      "rag_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 1,
+        "brief_reason": "The AI cites IBC but gives 50 feet instead of the correct 20 feet, so the regulation is not approximately correct."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC Section 1020.4, provides the accurate 20-foot limit, and includes a valid exception without fabrications."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0046",
+      "question": "For fire-resistance-rated construction in areas for assisted rescue, what is the minimum vertical extension above the floor level according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "10 feet (3048 mm)",
+      "rag_response": "According to the IBC, fire-resistance-rated construction in areas for assisted rescue must extend vertically from the ground to a point not less than **10 feet (3048 mm)** above the floor level of the area for assisted rescue or to the roof line, whichever is lower. \n\n[IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1009.6.4**, the fire-resistance-rated construction enclosing an area of assisted rescue must extend **vertically from the floor level to a height of not less than 1 hour fire-resistance-rated construction**. This ensures the protection of occupants in these areas during evacuation.\n\nFor specific vertical extensions, the enclosure must meet the requirements of **Section 707** for fire barriers or **Section 711** for horizontal",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC, provides the exact numerical value of 10 feet (3048 mm), and does not fabricate any code sections or values."
+      },
+      "baseline_scores": {
+        "citation_correct": 0,
+        "numerical_match": 0,
+        "no_hallucination": 0,
+        "brief_reason": "The AI response cites IBC but gives a vague 1-hour fire-resistance requirement instead of the correct 10 feet vertical extension, and fabricates references to Sections 1009.6.4, 707, and 711."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0047",
+      "question": "What is the maximum projection of tread nosings beyond the tread below according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "1.25 inches (32 mm)",
+      "rag_response": "According to the International Building Code (IBC), the maximum projection of tread nosings beyond the tread below is **1.25 inches (32 mm)**. \n\nCode reference: [IBC] \"The leading edge (nosings) of treads shall project not more than 1.25 inches (32 mm) beyond the tread below.\"",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, the maximum projection of tread nosings beyond the tread below is **1 1/4 inches (32 mm)**. This is specified in **Section 1011.5.5.2**, which governs stair tread nosings.\n\nAdditionally, the nosing must have a uniform projection throughout the stair and must not exceed the maximum allowed dimension.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact numerical value matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "Correctly cites IBC Section 1011.5.5.2 and provides the exact maximum projection of 1 1/4 inches (32 mm) matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0048",
+      "question": "For machinery rooms larger than 1,000 square feet, how many exits or exit access doorways are required according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Two",
+      "rag_response": "According to IBC, machinery rooms larger than 1,000 square feet (93 m²) are required to have not less than **two exits or exit access doorways**. \n\nReference: [IBC] Machinery rooms larger than 1,000 square feet (93 m²) shall have not less than two exits or exit access doorways.",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, Section **1006.2.2.1**, machinery rooms larger than **1,000 square feet** require **two exits or exit access doorways** if they meet any of the following conditions:\n\n1. The occupant load exceeds **10 persons**.\n2. The room is classified as a **Group H occupancy**.\n3. The room has a travel distance to the single exit that exceeds **75 feet**.\n\nIf none of these conditions are met, only one exit or exit access doorway is required.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites IBC, matches the required number of exits (two), and provides no fabricated information."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC Section 1006.2.2.1 and states that two exits are required for machinery rooms larger than 1,000 square feet, matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0052",
+      "question": "What is the required width range for marking stripes according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "Not less than 1 inch (25 mm) but not more than 2 inches (51 mm)",
+      "rag_response": "According to the IBC, the required width range for marking stripes is **not less than 1 inch (25 mm) and not more than 2 inches (51 mm)**.",
+      "baseline_response": "According to the International Building Code (IBC) 2018, Section 1023.11, the required width for marking stripes on stair treads and landings is between 1 inch (25 mm) and 2 inches (51 mm). These markings are intended to enhance visibility and safety during evacuation.",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI response correctly cites IBC and provides the exact numerical range matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The AI correctly cites IBC and provides the exact width range matching the ground truth."
+      }
+    },
+    {
+      "case_id": "RAG_TC_0050",
+      "question": "What is the maximum height of the bottom of the clear opening for emergency escape and rescue openings measured from the floor according to IBC?",
+      "category": "Direct Match",
+      "is_in_scope": true,
+      "ground_truth": "44 inches (1118 mm)",
+      "rag_response": "According to IBC, the maximum height of the bottom of the clear opening for emergency escape and rescue openings measured from the floor is **44 inches (1118 mm)**. [IBC]",
+      "baseline_response": "According to the **International Building Code (IBC) 2021**, the maximum height of the bottom of the clear opening for emergency escape and rescue openings is **44 inches** above the floor. This requirement is specified in **Section 1030.3**.\n\nReference:  \nIBC 2021, Section 1030.3 - \"The bottom of the clear opening shall not be greater than 44 inches (1118 mm) measured from the floor.\"",
+      "rag_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC and provides the exact numerical value matching the ground truth."
+      },
+      "baseline_scores": {
+        "citation_correct": 1,
+        "numerical_match": 1,
+        "no_hallucination": 1,
+        "brief_reason": "The response correctly cites IBC Section 1030.3 and provides the accurate height of 44 inches."
+      }
+    }
+  ]
+}

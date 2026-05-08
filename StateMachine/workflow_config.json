@@ -1,0 +1,197 @@
+{
+  "states": {
+    "idle": {
+      "symbol": "A",
+      "description": "Waiting for request",
+      "allowed_transitions": ["processing_initial"],
+      "transition_hints": [],
+      "expected_actions": []
+    },
+    "processing_initial": {
+      "symbol": "B",
+      "description": "Processing initial evaluation",
+      "allowed_transitions": ["running_feature_extraction", "idle"],
+      "transition_hints": [
+        {
+          "target_symbol": "D",
+          "target_state": "running_feature_extraction",
+          "trigger": "User has provided a floor plan and is requesting evacuation assessment, analysis, or feature extraction."
+        }
+      ],
+      "expected_actions": ["D"]
+    },
+    "awaiting_feature_extraction": {
+      "symbol": "C",
+      "description": "Preparing feature extraction",
+      "allowed_transitions": ["running_feature_extraction"],
+      "transition_hints": [
+        {
+          "target_symbol": "D",
+          "target_state": "running_feature_extraction",
+          "trigger": "Ready to begin feature extraction."
+        }
+      ],
+      "expected_actions": ["D"]
+    },
+    "running_feature_extraction": {
+      "symbol": "D",
+      "description": "Running feature extraction",
+      "allowed_transitions": ["awaiting_parameter_config"],
+      "transition_hints": [
+        {
+          "target_symbol": "E",
+          "target_state": "awaiting_parameter_config",
+          "trigger": "Feature extraction has just completed. First confirm completion to the user, then ask if they would like to proceed with the evacuation simulation. Present the default parameters that were provided to you, then ask if they want to modify any values or proceed with defaults."
+        }
+      ],
+      "expected_actions": ["E"]
+    },
+    "awaiting_parameter_config": {
+      "symbol": "E",
+      "description": "Awaiting parameter configuration",
+      "allowed_transitions": ["running_simulation"],
+      "transition_hints": [
+        {
+          "target_symbol": "G",
+          "target_state": "running_simulation",
+          "trigger": "User wants to proceed with simulation. This covers: providing specific parameter values (any numbers), confirming use of default values, any affirmative or confirmatory expression, or indicating readiness to start simulation."
+        }
+      ],
+      "expected_actions": ["G"]
+    },
+    "awaiting_simulation": {
+      "symbol": "F",
+      "description": "Preparing simulation",
+      "allowed_transitions": ["running_simulation"],
+      "transition_hints": [
+        {
+          "target_symbol": "G",
+          "target_state": "running_simulation",
+          "trigger": "Ready to start simulation."
+        }
+      ],
+      "expected_actions": ["G"]
+    },
+    "running_simulation": {
+      "symbol": "G",
+      "description": "Running simulation",
+      "allowed_transitions": ["simulation_completed"],
+      "transition_hints": [
+        {
+          "target_symbol": "I",
+          "target_state": "awaiting_data_analysis",
+          "trigger": "Simulation has just completed. Inform the user and ask whether they want to proceed with data analysis."
+        }
+      ],
+      "expected_actions": ["I"]
+    },
+    "simulation_completed": {
+      "symbol": "H",
+      "description": "Simulation completed",
+      "allowed_transitions": ["awaiting_data_analysis"],
+      "transition_hints": [
+        {
+          "target_symbol": "I",
+          "target_state": "awaiting_data_analysis",
+          "trigger": "Ask the user whether they want to proceed with data analysis."
+        }
+      ],
+      "expected_actions": ["I"]
+    },
+    "awaiting_data_analysis": {
+      "symbol": "I",
+      "description": "Awaiting data analysis decision",
+      "allowed_transitions": ["running_data_analysis"],
+      "transition_hints": [
+        {
+          "target_symbol": "J",
+          "target_state": "running_data_analysis",
+          "trigger": "User confirms they want to proceed with data analysis. Any affirmative, confirmatory, or agreeable response."
+        }
+      ],
+      "expected_actions": ["J"]
+    },
+    "running_data_analysis": {
+      "symbol": "J",
+      "description": "Running data analysis",
+      "allowed_transitions": ["data_analysis_completed"],
+      "transition_hints": [
+        {
+          "target_symbol": "L",
+          "target_state": "awaiting_conclusion",
+          "trigger": "Data analysis has just completed. Inform the user and ask whether they want to generate the expert conclusion report."
+        }
+      ],
+      "expected_actions": ["L"]
+    },
+    "data_analysis_completed": {
+      "symbol": "K",
+      "description": "Data analysis completed",
+      "allowed_transitions": ["awaiting_conclusion", "generating_conclusion"],
+      "transition_hints": [
+        {
+          "target_symbol": "L",
+          "target_state": "awaiting_conclusion",
+          "trigger": "Ask the user whether they want to generate the expert conclusion report."
+        },
+        {
+          "target_symbol": "M",
+          "target_state": "generating_conclusion",
+          "trigger": "User directly and clearly confirms they want to generate the conclusion report now."
+        }
+      ],
+      "expected_actions": ["L", "M"]
+    },
+    "awaiting_conclusion": {
+      "symbol": "L",
+      "description": "Awaiting conclusion generation",
+      "allowed_transitions": ["generating_conclusion"],
+      "transition_hints": [
+        {
+          "target_symbol": "M",
+          "target_state": "generating_conclusion",
+          "trigger": "User confirms they want to generate the expert conclusion. Any affirmative, confirmatory, or agreeable response."
+        }
+      ],
+      "expected_actions": ["M"]
+    },
+    "generating_conclusion": {
+      "symbol": "M",
+      "description": "Generating expert conclusion",
+      "allowed_transitions": ["conclusion_ready"],
+      "transition_hints": [],
+      "expected_actions": []
+    },
+    "conclusion_ready": {
+      "symbol": "N",
+      "description": "Ready for consultation",
+      "allowed_transitions": ["completed"],
+      "transition_hints": [
+        {
+          "target_symbol": "O",
+          "target_state": "completed",
+          "trigger": "Workflow is fully complete."
+        }
+      ],
+      "expected_actions": ["O"]
+    },
+    "completed": {
+      "symbol": "O",
+      "description": "Workflow completed",
+      "allowed_transitions": [],
+      "transition_hints": [],
+      "expected_actions": []
+    }
+  },
+  "null_action": {
+    "symbol": "Z",
+    "description": "No state change — respond normally without advancing the workflow"
+  },
+  "global_re_execution_targets": [
+    "running_feature_extraction",
+    "running_simulation",
+    "running_data_analysis",
+    "generating_conclusion"
+  ],
+  "re_execution_context": "At any stage, if the user requests to re-run a specific step, output the corresponding symbol: D (re-run feature extraction), G (re-run simulation), J (re-run data analysis), M (re-generate conclusion report). If the user says 'start over', 'restart', 'from the beginning', or similar, output D."
+}
