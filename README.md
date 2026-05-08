@@ -45,7 +45,7 @@ LLM hallucination is a critical risk in safety engineering. ChatEvac employs a *
 ### 1. Clone and set up environment
 
 ```bash
-git clone https://github.com/your-username/ChatEvac.git
+git clone https://github.com/AndyRylynn/ChatEvac.git
 cd ChatEvac
 pip install -r requirements.txt
 ```
