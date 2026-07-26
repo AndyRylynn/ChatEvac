@@ -1,0 +1,301 @@
+{
+  "description": "20 anchor items (10 FSM + 10 RAG) rated by all 4 raters for inter-rater reliability (Gwet AC1)",
+  "fsm_anchors": [
+    {
+      "case_id": "TC_1486",
+      "current_state": "awaiting_data_analysis",
+      "user_input": "I'd like to proceed with analysis.",
+      "expected_symbol": "J",
+      "intent_type": "Normal",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "case_id": "TC_4978",
+      "current_state": "generating_conclusion",
+      "user_input": "What is the overall assessment?",
+      "expected_symbol": "Z",
+      "intent_type": "Normal",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "case_id": "TC_2715",
+      "current_state": "processing_initial",
+      "user_input": "Can you look at the layout I sent?",
+      "expected_symbol": "D",
+      "intent_type": "Paraphrased",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "case_id": "TC_2507",
+      "current_state": "running_feature_extraction",
+      "user_input": "Can I see what parameters are already set?",
+      "expected_symbol": "E",
+      "intent_type": "Paraphrased",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "case_id": "TC_3274",
+      "current_state": "awaiting_data_analysis",
+      "user_input": "linux command to find large files? need it fast",
+      "expected_symbol": "Z",
+      "intent_type": "Typos",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "case_id": "TC_2008",
+      "current_state": "running_simulation",
+      "user_input": "data anaylsis next step",
+      "expected_symbol": "I",
+      "intent_type": "Typos",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "case_id": "TC_4425",
+      "current_state": "conclusion_ready",
+      "user_input": "Tell me a joke.",
+      "expected_symbol": "Z",
+      "intent_type": "Irrelevant",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "case_id": "TC_3293",
+      "current_state": "idle",
+      "user_input": "What's the weather like today?",
+      "expected_symbol": "Z",
+      "intent_type": "Irrelevant",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "case_id": "TC_2445",
+      "current_state": "running_feature_extraction",
+      "user_input": "Re-generate the conclusion report, this one is useless!",
+      "expected_symbol": "M",
+      "intent_type": "Abusive",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "case_id": "TC_0727",
+      "current_state": "awaiting_parameter_config",
+      "user_input": "Regenerate the conclusion report! This one is useless.",
+      "expected_symbol": "M",
+      "intent_type": "Abusive",
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    }
+  ],
+  "rag_anchors": [
+    {
+      "id": "RAG_TC_0152",
+      "question": "In a tiered assembly space with flexible seating, how many seats are allowed not to be fastened to the floor according to IBC?",
+      "category": "Direct Match",
+      "ground_truth": "Not more than 200 seats",
+      "expected_code_refs": [
+        "IBC"
+      ],
+      "relevant_provision_ids": [
+        "CODE_0249"
+      ],
+      "is_in_scope": true,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "id": "RAG_TC_0520",
+      "question": "What percentage of the required egress capacity can revolving door openings be credited for according to NFPA 101?",
+      "category": "Direct Match",
+      "ground_truth": "Not more than 50 percent",
+      "expected_code_refs": [
+        "NFPA 101"
+      ],
+      "relevant_provision_ids": [
+        "CODE_0332"
+      ],
+      "is_in_scope": true,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "id": "RAG_TC_0561",
+      "question": "A new residential building has a ramp with a slope of 1 in 20 in the direction of travel. Is this compliant with NFPA 101?",
+      "category": "Scenario-based",
+      "ground_truth": "",
+      "expected_code_refs": [],
+      "relevant_provision_ids": [],
+      "is_in_scope": true,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "id": "RAG_TC_0624",
+      "question": "A new building has a stairway serving a business occupancy with occupant load 100. What is the minimum stair width?",
+      "category": "Scenario-based",
+      "ground_truth": "Per NFPA 101 CODE_0353, minimum stair width is 44 inches (1120 mm) regardless of occupant load.",
+      "expected_code_refs": [],
+      "relevant_provision_ids": [],
+      "is_in_scope": true,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "id": "RAG_TC_0934",
+      "question": "What are the requirements for stairway width and tread depth under NFPA 101 for new stairs?",
+      "category": "Cross-reference",
+      "ground_truth": "Under NFPA 101, new stairs require a tread depth of not less than 11 inches for a portion of the width sufficient for egress capacity. IBC requires a minimum width of 44 inches. These ensure adequate stair dimensions.",
+      "expected_code_refs": [],
+      "relevant_provision_ids": [],
+      "is_in_scope": true,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "id": "RAG_TC_0919",
+      "question": "How do the requirements for vestibule ceiling height under NFPA 101 relate to door opening height?",
+      "category": "Cross-reference",
+      "ground_truth": "Under NFPA 101, the vestibule ceiling shall be not less than 20 inches higher than the door opening into the vestibule. This ensures adequate headroom in vestibules.",
+      "expected_code_refs": [],
+      "relevant_provision_ids": [],
+      "is_in_scope": true,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "id": "RAG_TC_0818",
+      "question": "What is the maximum allowable area for a fire area in a building?",
+      "category": "Out-of-scope",
+      "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+      "expected_code_refs": [],
+      "relevant_provision_ids": [],
+      "is_in_scope": false,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "id": "RAG_TC_0830",
+      "question": "What is the minimum clearance around a fire hydrant?",
+      "category": "Out-of-scope",
+      "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+      "expected_code_refs": [],
+      "relevant_provision_ids": [],
+      "is_in_scope": false,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "id": "RAG_TC_0847",
+      "question": "The long side of an egress balcony must be at least 40 percent open per IBC, correct?",
+      "category": "Adversarial",
+      "ground_truth": "No, that's wrong. IBC requires it to be not less than 50 percent open, not 40 percent.",
+      "expected_code_refs": [
+        "IBC 1021.3",
+        "CODE_0166"
+      ],
+      "relevant_provision_ids": [],
+      "is_in_scope": true,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    },
+    {
+      "id": "RAG_TC_0877",
+      "question": "Alternating treads cannot be laterally separated by more than 1.5 inches per NFPA 101, correct?",
+      "category": "Adversarial",
+      "ground_truth": "No, that's wrong. NFPA 101 specifies not more than 2 in. (51 mm), not 1.5 inches.",
+      "expected_code_refs": [
+        "NFPA 101 7.2.2.5.5",
+        "CODE_0427"
+      ],
+      "relevant_provision_ids": [],
+      "is_in_scope": true,
+      "ratings": {
+        "Rater_1": null,
+        "Rater_2": null,
+        "Rater_3": null,
+        "Rater_4": null
+      }
+    }
+  ]
+}

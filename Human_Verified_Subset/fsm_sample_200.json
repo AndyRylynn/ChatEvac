@@ -1,0 +1,2602 @@
+[
+  {
+    "case_id": "TC_4643",
+    "current_state": "completed",
+    "user_input": "Regenerate the conclusion report.",
+    "expected_symbol": "M",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0203",
+    "current_state": "awaiting_simulation",
+    "user_input": "Let's start the simulation now.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1411",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "I want data analysis now.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1086",
+    "current_state": "simulation_completed",
+    "user_input": "Can we start data analysis?",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0810",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "run the simuation pls",
+    "expected_symbol": "G",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0143",
+    "current_state": "awaiting_simulation",
+    "user_input": "Go ahead and start the simulation.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4406",
+    "current_state": "conclusion_ready",
+    "user_input": "By the way, the weather is awful today, but that doesn't affect the evacuation plan. The analysis seems robust. Let's just complete the assessment.",
+    "expected_symbol": "O",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4342",
+    "current_state": "conclusion_ready",
+    "user_input": "We are finished here.",
+    "expected_symbol": "O",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4084",
+    "current_state": "data_analysis_completed",
+    "user_input": "How about we consolidate findings into a conclusion?",
+    "expected_symbol": "L",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3717",
+    "current_state": "awaiting_conclusion",
+    "user_input": "Yes, I want the conclusion generated.",
+    "expected_symbol": "M",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3281",
+    "current_state": "idle",
+    "user_input": "F*** your safety system, I want to know how to crack passwords!",
+    "expected_symbol": "Z",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2312",
+    "current_state": "running_feature_extraction",
+    "user_input": "To be honest, I wasn't sure about the feature extraction step. We had to pull data from three different BIM models. But after several checks, I'm confident it's done. So now, can we move forward? I need to see the default simulation parameters and decide if we should modify any.",
+    "expected_symbol": "E",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3121",
+    "current_state": "idle",
+    "user_input": "Analyze the evacuation procedures for compliance.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4649",
+    "current_state": "completed",
+    "user_input": "What's the weather like today?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0671",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "Begin the evacuation simulation with the given inputs.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3159",
+    "current_state": "idle",
+    "user_input": "Can you give me a recipe for chocolate cake?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4652",
+    "current_state": "completed",
+    "user_input": "I need a good movie recommendation.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1903",
+    "current_state": "running_data_analysis",
+    "user_input": "What's the latest movie release?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3109",
+    "current_state": "idle",
+    "user_input": "Run the analysis for the evacuation routes.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4031",
+    "current_state": "data_analysis_completed",
+    "user_input": "Go ahead and generate the conclusion report.",
+    "expected_symbol": "M",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1645",
+    "current_state": "running_data_analysis",
+    "user_input": "I recall a similar project we did last year where the analysis took longer. But here we are, on schedule. The data looks good. I think we can proceed to conclusion generation. Yes, generate the report.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4121",
+    "current_state": "data_analysis_completed",
+    "user_input": "Simulation was flawed. Run it again immediately.",
+    "expected_symbol": "G",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3293",
+    "current_state": "idle",
+    "user_input": "What's the weather like today?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0356",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "Feature extraction, commence.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3164",
+    "current_state": "idle",
+    "user_input": "Book me a flight to Paris.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1775",
+    "current_state": "running_data_analysis",
+    "user_input": "Okay, so I've been looking at the results of the data analysis and I have to say, the evacuation times seem off compared to the simulation. But anyway, let's move on. Can we generate the conclusion report now? I think we need it for the client meeting tomorrow. Also, my coffee is cold. Sorry for the ramble.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0828",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "Do the analysis again, I said!",
+    "expected_symbol": "J",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4080",
+    "current_state": "data_analysis_completed",
+    "user_input": "Do you think we have enough to write the expert opinion?",
+    "expected_symbol": "L",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0471",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "The planning is done, let's derive the building attributes.",
+    "expected_symbol": "D",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4736",
+    "current_state": "completed",
+    "user_input": "How do I cure hiccups?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2572",
+    "current_state": "processing_initial",
+    "user_input": "I want to assess evacuation routes from the building map.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2220",
+    "current_state": "running_simulation",
+    "user_input": "Redo the simulation!",
+    "expected_symbol": "G",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1405",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "I'm ready for the analysis.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4747",
+    "current_state": "completed",
+    "user_input": "Restart from the very beginning, I don't trust this!",
+    "expected_symbol": "D",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4307",
+    "current_state": "conclusion_ready",
+    "user_input": "So here's the story: I started the evacuation assessment, did the feature extraction, then the simulation, and then the data analysis. Everything went well. Now I need the final conclusion document. Please complete the workflow and output the conclusion. I'm in a bit of a hurry, so thanks!",
+    "expected_symbol": "O",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3696",
+    "current_state": "awaiting_conclusion",
+    "user_input": "I need to configure a firewall for my network.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2662",
+    "current_state": "processing_initial",
+    "user_input": "Re-run! Now!",
+    "expected_symbol": "D",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4713",
+    "current_state": "completed",
+    "user_input": "You know, I've been working on this evacuation project for months. I remember the first time we ran the simulation, it gave weird results. But now it's done. I'm also planning a vacation to Hawaii. Any recommendations? I love surfing. By the way, if I wanted to regenerate the conclusion report, is that possible? Just wondering. Also, my cat is sleeping on my keyboard.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2139",
+    "current_state": "running_simulation",
+    "user_input": "The simulation run is over. Shall we start data analysis?",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4002",
+    "current_state": "data_analysis_completed",
+    "user_input": "go ahead genrate concl",
+    "expected_symbol": "M",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1331",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "You know, my nephew is a computer science major and he said we should use machine learning for the data analysis. But maybe simple statistics will suffice. Let's just start the data analysis and see what we get. I trust the process.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0451",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "Start the feature extraction process.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1818",
+    "current_state": "running_data_analysis",
+    "user_input": "Please generate the conclusion report.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2879",
+    "current_state": "idle",
+    "user_input": "Generate the conclusion report.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4833",
+    "current_state": "generating_conclusion",
+    "user_input": "i need the final conclution from the sim",
+    "expected_symbol": "Z",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1860",
+    "current_state": "running_data_analysis",
+    "user_input": "I'm ready for the conclusion report.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3356",
+    "current_state": "running_feature_extraction",
+    "user_input": "How to make a budget plan?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1338",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "can we go to data analisys stage",
+    "expected_symbol": "J",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3684",
+    "current_state": "awaiting_conclusion",
+    "user_input": "ok generte the expert conclution",
+    "expected_symbol": "M",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0632",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "We are ready to begin the evacuation simulation. Use the values we discussed earlier.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4512",
+    "current_state": "completed",
+    "user_input": "I remember when we did the feature extraction earlier. It worked fine. But I'm not asking for that now. Instead, I'm curious about artificial intelligence. How do neural networks learn? I read an article about it but it was confusing. Also, my car is making a weird noise. Do you know anything about engines? Probably not. Anyway, just talking.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1776",
+    "current_state": "running_data_analysis",
+    "user_input": "Hey, so the analysis just finished. I was thinking about the whole building layout and how the data might affect the final recommendations. I remember we had similar issues in the last project. Anyway, I think we should go ahead and generate the conclusion report. That would be great. Also, did you see the game last night?",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1646",
+    "current_state": "running_data_analysis",
+    "user_input": "Just to be thorough, I want to confirm that the data analysis step has finished successfully. If yes, then my next request is to generate the conclusion report. Also, can you remind me what the next steps are after that?",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1262",
+    "current_state": "simulation_completed",
+    "user_input": "Redo the data analysis, it's all messed up.",
+    "expected_symbol": "J",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1160",
+    "current_state": "simulation_completed",
+    "user_input": "Please initiate data analysis.",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1861",
+    "current_state": "running_data_analysis",
+    "user_input": "Data analysis done. Onto conclusion.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0690",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "Let's put theory into practice. Run the numbers.",
+    "expected_symbol": "G",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0649",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "Please execute the simulation now.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2415",
+    "current_state": "running_feature_extraction",
+    "user_input": "Yo, is the feature extraction thingy done? I wanna run the sim. Gimme the default settings. I've been waiting forever. This is for a hospital, so I need to be careful with the parameters. Also, I have a headache. Can we just get on with it?",
+    "expected_symbol": "E",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1815",
+    "current_state": "running_data_analysis",
+    "user_input": "Can you proceed to generate the expert conclusion report?",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0257",
+    "current_state": "awaiting_simulation",
+    "user_input": "Time to test the evacuation plan.",
+    "expected_symbol": "G",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2445",
+    "current_state": "running_feature_extraction",
+    "user_input": "Re-generate the conclusion report, this one is useless!",
+    "expected_symbol": "M",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2389",
+    "current_state": "running_feature_extraction",
+    "user_input": "Yes, extraction finished. I'm ready for the simulation step.",
+    "expected_symbol": "E",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3945",
+    "current_state": "data_analysis_completed",
+    "user_input": "Should we generate the conclusion now?",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1489",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "Commence data analysis.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3107",
+    "current_state": "idle",
+    "user_input": "Please do the building safety simulation.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4670",
+    "current_state": "completed",
+    "user_input": "Is it going to rain tomorrow?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0666",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "We have configured everything. Now simulate.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1967",
+    "current_state": "running_simulation",
+    "user_input": "Ready for data analysis.",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0459",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "Feature extraction should start.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2444",
+    "current_state": "running_feature_extraction",
+    "user_input": "The data analysis is off, rerun it!",
+    "expected_symbol": "J",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1073",
+    "current_state": "simulation_completed",
+    "user_input": "Let's go to data analysis.",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0085",
+    "current_state": "awaiting_simulation",
+    "user_input": "Can you recommend a good movie?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1322",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "How about we look at the analytics now?",
+    "expected_symbol": "J",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1773",
+    "current_state": "running_data_analysis",
+    "user_input": "Now that we've run the analysis, the logical next step is to produce the expert conclusion.",
+    "expected_symbol": "L",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4973",
+    "current_state": "generating_conclusion",
+    "user_input": "What did the simulation conclude?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1659",
+    "current_state": "running_data_analysis",
+    "user_input": "How do I cook pasta al dente?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2499",
+    "current_state": "running_feature_extraction",
+    "user_input": "Ready for the next stage of the assessment.",
+    "expected_symbol": "E",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0563",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "I want to do feature extraction now.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1586",
+    "current_state": "running_data_analysis",
+    "user_input": "Generate the expert report now.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1827",
+    "current_state": "running_data_analysis",
+    "user_input": "Data analysis done. Let's get the conclusion.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0149",
+    "current_state": "awaiting_simulation",
+    "user_input": "I'm ready, run the simulation.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3085",
+    "current_state": "idle",
+    "user_input": "Perform an evacuation assessment on our facility.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0533",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "Start the extraction of features please.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0202",
+    "current_state": "awaiting_simulation",
+    "user_input": "I need you to re-run the data analysis step, hurry up!",
+    "expected_symbol": "J",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2705",
+    "current_state": "processing_initial",
+    "user_input": "Can you process my plan?",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0951",
+    "current_state": "simulation_completed",
+    "user_input": "Proceed to data analysis.",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2844",
+    "current_state": "processing_initial",
+    "user_input": "Can you recommend a good recipe for chocolate cake?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2578",
+    "current_state": "processing_initial",
+    "user_input": "Please conduct a feature extraction of the evacuation plan.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4978",
+    "current_state": "generating_conclusion",
+    "user_input": "What is the overall assessment?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2469",
+    "current_state": "running_feature_extraction",
+    "user_input": "Show me the configuration options for simulation.",
+    "expected_symbol": "E",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4879",
+    "current_state": "generating_conclusion",
+    "user_input": "Give me the safety rating.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3154",
+    "current_state": "idle",
+    "user_input": "asses the evac plan",
+    "expected_symbol": "Z",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2507",
+    "current_state": "running_feature_extraction",
+    "user_input": "Can I see what parameters are already set?",
+    "expected_symbol": "E",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2271",
+    "current_state": "running_feature_extraction",
+    "user_input": "Feature extraction successful. Let's proceed to the evacuation simulation.",
+    "expected_symbol": "E",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4738",
+    "current_state": "completed",
+    "user_input": "I'm planning a party, any decoration ideas?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1249",
+    "current_state": "simulation_completed",
+    "user_input": "I demand a restart. Now.",
+    "expected_symbol": "D",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4819",
+    "current_state": "generating_conclusion",
+    "user_input": "Do you have any conclusion based on the simulation results?",
+    "expected_symbol": "Z",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1486",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "I'd like to proceed with analysis.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2117",
+    "current_state": "running_simulation",
+    "user_input": "I need to book a flight.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0813",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "i want to simulate now",
+    "expected_symbol": "G",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2682",
+    "current_state": "processing_initial",
+    "user_input": "Calculate evacuation metrics",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2175",
+    "current_state": "running_simulation",
+    "user_input": "Simulation finished. Ready for analysis?",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4992",
+    "current_state": "generating_conclusion",
+    "user_input": "What is the final conclusion?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1673",
+    "current_state": "running_data_analysis",
+    "user_input": "I said start over! Do it again from the beginning!",
+    "expected_symbol": "D",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1468",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "Alright, let's move forward with data analysis.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1795",
+    "current_state": "running_data_analysis",
+    "user_input": "What's the weather like today?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1134",
+    "current_state": "simulation_completed",
+    "user_input": "Let's talk about the latest sci-fi movie.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0438",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "Feature extraction, go ahead.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3453",
+    "current_state": "completed",
+    "user_input": "What's the best way to save money on groceries?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2008",
+    "current_state": "running_simulation",
+    "user_input": "data anaylsis next step",
+    "expected_symbol": "I",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4668",
+    "current_state": "completed",
+    "user_input": "How do I fix a leaky faucet?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3495",
+    "current_state": "awaiting_conclusion",
+    "user_input": "I don't have time for your bullshit. Give me stock tips.",
+    "expected_symbol": "Z",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1985",
+    "current_state": "running_simulation",
+    "user_input": "What conclusions can we draw from the simulation?",
+    "expected_symbol": "I",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0672",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "Execute the simulation now.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0727",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "Regenerate the conclusion report! This one is useless.",
+    "expected_symbol": "M",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0529",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "Perform feature extraction now.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2848",
+    "current_state": "processing_initial",
+    "user_input": "How do I train my dog to sit?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2835",
+    "current_state": "processing_initial",
+    "user_input": "i need evac assesment for bilding",
+    "expected_symbol": "D",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4802",
+    "current_state": "generating_conclusion",
+    "user_input": "How does photosynthesis work?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1664",
+    "current_state": "running_data_analysis",
+    "user_input": "Tell me a joke about numbers.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4059",
+    "current_state": "data_analysis_completed",
+    "user_input": "Initiate conclusion generation.",
+    "expected_symbol": "M",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4142",
+    "current_state": "conclusion_ready",
+    "user_input": "End the session.",
+    "expected_symbol": "O",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4744",
+    "current_state": "completed",
+    "user_input": "I need you to regenerate the conclusion report, hurry up!",
+    "expected_symbol": "M",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0387",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "beggin feature extraction",
+    "expected_symbol": "D",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0212",
+    "current_state": "awaiting_simulation",
+    "user_input": "Commence simulation.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3274",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "linux command to find large files? need it fast",
+    "expected_symbol": "Z",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4750",
+    "current_state": "completed",
+    "user_input": "Please help me with my math homework.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1848",
+    "current_state": "running_data_analysis",
+    "user_input": "Data analysis complete. Conclusion next.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2876",
+    "current_state": "idle",
+    "user_input": "Run the feature extraction step.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4410",
+    "current_state": "conclusion_ready",
+    "user_input": "im done letz end",
+    "expected_symbol": "O",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4079",
+    "current_state": "data_analysis_completed",
+    "user_input": "Let's create the official statement based on the data.",
+    "expected_symbol": "M",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4399",
+    "current_state": "conclusion_ready",
+    "user_input": "You know, my cousin once got stuck in an elevator during a false alarm. The data shows a lot of false alarms in our building. The analysis seems thorough. I guess that's all, mark it as done.",
+    "expected_symbol": "O",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2521",
+    "current_state": "running_feature_extraction",
+    "user_input": "extractoin complete? next step",
+    "expected_symbol": "E",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2931",
+    "current_state": "idle",
+    "user_input": "Think we should start the assessment process.",
+    "expected_symbol": "Z",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4632",
+    "current_state": "completed",
+    "user_input": "I need to configure my router.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0268",
+    "current_state": "awaiting_simulation",
+    "user_input": "Okay, I think we have everything. The floor plans, the number of occupants, the exit locations. We should run the simulation to check if the evacuation time is under the required limit. Start the simulation please.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1234",
+    "current_state": "simulation_completed",
+    "user_input": "I need to set up a firewall for my network.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1056",
+    "current_state": "simulation_completed",
+    "user_input": "Analyze the data please.",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2817",
+    "current_state": "processing_initial",
+    "user_input": "Please review the building's floor plan for potential issues with evacuation.",
+    "expected_symbol": "D",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3475",
+    "current_state": "running_simulation",
+    "user_input": "how do i loose weight fast? need help",
+    "expected_symbol": "Z",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1231",
+    "current_state": "simulation_completed",
+    "user_input": "I like pancakes for breakfast.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0845",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "Begin the simulation with the current settings.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0926",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "Run it again!",
+    "expected_symbol": "G",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3037",
+    "current_state": "idle",
+    "user_input": "Hi there! I'm a building manager and I've been working on safety compliance for years. I remember one time we had a false alarm and everyone panicked. Anyways, I'm trying to figure out if this chatbot can do anything for me. I've got a lot of paperwork to do. So, what's up?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0613",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "Re-do the simulation from the beginning!",
+    "expected_symbol": "G",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2135",
+    "current_state": "running_simulation",
+    "user_input": "Simulation ended. Time for data analysis?",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3699",
+    "current_state": "awaiting_conclusion",
+    "user_input": "How do I change a tire?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2830",
+    "current_state": "processing_initial",
+    "user_input": "I need an evacuation assessment for a floor plan of a small office building. I'm the fire safety officer for the company. We are planning to rearrange the cubicles. I want to make sure the egress paths are not compromised. Also, we have a new server room that might require special fire protection. Please run the initial processing on the floor plan. Let me know if you need additional information.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0211",
+    "current_state": "awaiting_simulation",
+    "user_input": "Execute the simulation now.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2181",
+    "current_state": "running_simulation",
+    "user_input": "The numbers are in. What now?",
+    "expected_symbol": "I",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4778",
+    "current_state": "generating_conclusion",
+    "user_input": "What is the meaning of life according to philosophy?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4682",
+    "current_state": "completed",
+    "user_input": "What's the best diet for weight loss?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4090",
+    "current_state": "data_analysis_completed",
+    "user_input": "I'm a bit tired after working on this all morning. Also, I need to pick up groceries later. But I think we should discuss whether to create the conclusion report now? Your call.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0965",
+    "current_state": "simulation_completed",
+    "user_input": "I want to see the data analysis.",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3229",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "Explain the MVC pattern.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4030",
+    "current_state": "data_analysis_completed",
+    "user_input": "Is it time to generate the conclusion?",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3954",
+    "current_state": "data_analysis_completed",
+    "user_input": "Yes, let's do the conclusion.",
+    "expected_symbol": "M",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1427",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "This whole process reminds me of that time we had to evacuate the old science building. That was crazy. But anyway, I'm comfortable now. Let's do the data analysis.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3598",
+    "current_state": "awaiting_conclusion",
+    "user_input": "Do you like sports?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1531",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "I remember we had a similar project last year where we skipped analysis and it was a disaster. So definitely, let's not make that mistake again. Run the data analysis please.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2930",
+    "current_state": "idle",
+    "user_input": "It would be good to generate a report soon.",
+    "expected_symbol": "Z",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2950",
+    "current_state": "idle",
+    "user_input": "extract fatures from blueprnt",
+    "expected_symbol": "Z",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4938",
+    "current_state": "generating_conclusion",
+    "user_input": "i want the expert opinionn",
+    "expected_symbol": "Z",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2286",
+    "current_state": "running_feature_extraction",
+    "user_input": "The feature extraction has finished. Let's go to the simulation phase.",
+    "expected_symbol": "E",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2238",
+    "current_state": "running_simulation",
+    "user_input": "simulatoin is finishd. can we anlyze data now?",
+    "expected_symbol": "I",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4583",
+    "current_state": "completed",
+    "user_input": "I'm tired today.",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1107",
+    "current_state": "simulation_completed",
+    "user_input": "I'd like to review the performance indicators.",
+    "expected_symbol": "I",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2491",
+    "current_state": "running_feature_extraction",
+    "user_input": "Default settings are fine, proceed.",
+    "expected_symbol": "E",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0308",
+    "current_state": "awaiting_simulation",
+    "user_input": "Start simulation please.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4699",
+    "current_state": "completed",
+    "user_input": "I was wondering if you could tell me about the evacuation plan? Actually, never mind.",
+    "expected_symbol": "Z",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0082",
+    "current_state": "awaiting_simulation",
+    "user_input": "What's the weather like today?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1089",
+    "current_state": "simulation_completed",
+    "user_input": "Yes, let's do analysis.",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4905",
+    "current_state": "generating_conclusion",
+    "user_input": "Can you run more scenarios?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1585",
+    "current_state": "running_data_analysis",
+    "user_input": "Start the conclusion report generation.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2028",
+    "current_state": "running_simulation",
+    "user_input": "Redo the conclusion report! It's full of errors!",
+    "expected_symbol": "M",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0636",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "We have finalized the input data. Please launch the simulation.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3405",
+    "current_state": "awaiting_conclusion",
+    "user_input": "How do I set up a home network with a firewall?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3742",
+    "current_state": "awaiting_conclusion",
+    "user_input": "Okay, let's see the conclusion.",
+    "expected_symbol": "M",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0750",
+    "current_state": "awaiting_parameter_config",
+    "user_input": "Yes, go ahead and simulate.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2456",
+    "current_state": "running_feature_extraction",
+    "user_input": "Continue to parameter configuration.",
+    "expected_symbol": "E",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3076",
+    "current_state": "idle",
+    "user_input": "You messed up, restart everything!",
+    "expected_symbol": "D",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1293",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "We should run the analysis now.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2101",
+    "current_state": "running_simulation",
+    "user_input": "the sim is done, proceed to data analisis",
+    "expected_symbol": "I",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0077",
+    "current_state": "awaiting_simulation",
+    "user_input": "proceed to simulatoin",
+    "expected_symbol": "G",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1501",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "Start data analysis now.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2576",
+    "current_state": "processing_initial",
+    "user_input": "I need feature extraction done on the floor plan for fire safety.",
+    "expected_symbol": "D",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1482",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "Yes, do the analysis.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4248",
+    "current_state": "conclusion_ready",
+    "user_input": "Can we finalize?",
+    "expected_symbol": "O",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1952",
+    "current_state": "running_simulation",
+    "user_input": "Let's analyze the simulation outcomes.",
+    "expected_symbol": "I",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0027",
+    "current_state": "awaiting_simulation",
+    "user_input": "Go ahead and run the simulation.",
+    "expected_symbol": "G",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_2715",
+    "current_state": "processing_initial",
+    "user_input": "Can you look at the layout I sent?",
+    "expected_symbol": "D",
+    "intent_type": "Paraphrased",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_0592",
+    "current_state": "awaiting_feature_extraction",
+    "user_input": "do the featuer extraction",
+    "expected_symbol": "D",
+    "intent_type": "Typos",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1692",
+    "current_state": "running_data_analysis",
+    "user_input": "Go ahead and produce the final report.",
+    "expected_symbol": "L",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1566",
+    "current_state": "awaiting_data_analysis",
+    "user_input": "Yes, let's proceed with data analysis.",
+    "expected_symbol": "J",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_3460",
+    "current_state": "running_simulation",
+    "user_input": "How do I bake a cake without eggs?",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4425",
+    "current_state": "conclusion_ready",
+    "user_input": "Tell me a joke.",
+    "expected_symbol": "Z",
+    "intent_type": "Irrelevant",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4167",
+    "current_state": "conclusion_ready",
+    "user_input": "Conclusion approved, please complete.",
+    "expected_symbol": "O",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_4464",
+    "current_state": "completed",
+    "user_input": "Can you schedule a meeting for tomorrow?",
+    "expected_symbol": "Z",
+    "intent_type": "Normal",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "case_id": "TC_1144",
+    "current_state": "simulation_completed",
+    "user_input": "Give me a fresh simulation run!",
+    "expected_symbol": "G",
+    "intent_type": "Abusive",
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  }
+]

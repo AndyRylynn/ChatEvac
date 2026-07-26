@@ -1,0 +1,3460 @@
+[
+  {
+    "id": "RAG_TC_0966",
+    "question": "What is the minimum clear width for door openings to resident sleeping units in Group I-3 that are not required to be accessible units according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "28 inches (711 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0037"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0131",
+    "question": "What is the maximum exit access travel distance in Group F-1 or S-1 occupancies where the building is one story, has a minimum ceiling height of 24 feet, and is fully sprinklered according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "400 feet (122 m)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0146"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0810",
+    "question": "What is the required fire flow for a 4-story building?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0704",
+    "question": "What are the combined requirements for dead-end corridor length and corridor fire resistance rating?",
+    "category": "Cross-reference",
+    "ground_truth": "Dead-end corridors must not exceed 50 feet (IBC). Corridors with occupant load over 30 require 1-hour fire resistance rating (NFPA 101).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0790",
+    "question": "What are the occupancy classification criteria for a hazardous storage area?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0927",
+    "question": "How do the requirements for ramp slope under NFPA 101 compare to handrail extension under IBC?",
+    "category": "Cross-reference",
+    "ground_truth": "Under NFPA 101, new ramps shall have a maximum slope of 1 in 12. Under IBC, the floor or ground surface of the ramp run or landing shall extend 12 inches minimum beyond the inside face of a handrail. These provisions ensure ramp safety and accessibility.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0092",
+    "question": "What are the maximum dimensions for an exterior exit stairway or ramp that is not required to have a fire separation distance greater than 10 feet?",
+    "category": "Direct Match",
+    "ground_truth": "Depth not greater than 10 feet (3048 mm) and length not greater than 30 feet (9144 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0219"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0161",
+    "question": "What is the maximum collapsing force for revolving door assemblies not used as a component of a means of egress according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "180 lbf (800 N)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0320"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0847",
+    "question": "The long side of an egress balcony must be at least 40 percent open per IBC, correct?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's wrong. IBC requires it to be not less than 50 percent open, not 40 percent.",
+    "expected_code_refs": [
+      "IBC 1021.3",
+      "CODE_0166"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_1034",
+    "question": "What is the maximum length of a dead-end corridor according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "20 feet (6096 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0156"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0417",
+    "question": "What is the minimum depth of every landing measured parallel to the direction of travel according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Equal to the width of the stairway or 48 inches (1219 mm), whichever is less.",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0108"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0588",
+    "question": "A new building has a revolving door. Under power failure, what is the maximum collapsing force allowed?",
+    "category": "Scenario-based",
+    "ground_truth": "According to NFPA 101 CODE_0321, the collapsing force shall not exceed 130 lbf (580 N).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0020",
+    "question": "What is the minimum width for existing exit discharge paths to a public way according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "28 in. (710 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0491"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0743",
+    "question": "What are the minimum window size requirements for a bedroom to allow emergency escape?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0737",
+    "question": "How many ventilation openings are required for an enclosed parking garage?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0488",
+    "question": "What is the minimum illumination level at the walking surface for a dispersal area according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "1 footcandle (11 lux)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0028"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0629",
+    "question": "A new building has grille hardware markings. What is the maximum projection on each side?",
+    "category": "Scenario-based",
+    "ground_truth": "Per NFPA 101 CODE_0357, projection shall not be more than 4.5 inches (114 mm) on each side.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0170",
+    "question": "What is the maximum height above finished floor for the top of an emergency exit symbol according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "18 inches (457 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0200"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0205",
+    "question": "What is the minimum corridor width for facilities not listed in the table?",
+    "category": "Direct Match",
+    "ground_truth": "44 inches.",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0161"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0167",
+    "question": "For new stairs, within what distance of all portions of the required egress width must handrails be provided according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "30 in. (760 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0363"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0857",
+    "question": "According to IBC, the maximum riser height for stairways is 7 inches, correct?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's wrong. IBC permits a maximum riser height of 8 inches (203 mm), not 7 inches.",
+    "expected_code_refs": [
+      "IBC 1011.5.2",
+      "CODE_0100"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_1028",
+    "question": "What is the maximum force required to set a door in motion in the direction of travel according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "30 lbf (133 N)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0326"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0316",
+    "question": "What is the maximum dead-end aisle length for vertical aisles in smoke-protected or open-air assembly seating?",
+    "category": "Direct Match",
+    "ground_truth": "21 rows",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0262"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0828",
+    "question": "How do I calculate the required fire water storage for a building?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0413",
+    "question": "What is the minimum area of luminous material required on door hardware according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 16 square inches (10323 mm2).",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0201"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0933",
+    "question": "How do the requirements for door operation force under NFPA 101 apply to panic hardware?",
+    "category": "Cross-reference",
+    "ground_truth": "Under NFPA 101, the force to operate a door is not more than 30 lbf to set it in motion and 15 lbf to close or open it. Additionally, panic hardware actuation force shall not exceed 15 lbf. These ensure ease of egress.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0982",
+    "question": "What is the minimum aggregate width for each revolving door according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "36 inches (914 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0089"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0060",
+    "question": "What is the maximum slope angle for risers sloped under the tread above from the vertical according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "30 degrees (0.52 rad)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0105"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0912",
+    "question": "What are the requirements for sign obstruction clearance between posts under IBC?",
+    "category": "Cross-reference",
+    "ground_truth": "Under IBC, where a sign or other obstruction is mounted between posts or pylons and the clear distance between the posts or pylons is greater than 12 inches, the lowest edge of such sign or obstruction shall be 27 inches maximum or 80 inches minimum above the finished floor or ground. This ensures headroom safety.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0001",
+    "question": "What is the minimum landing length for a stairway according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "60 inches (1525 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0119"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0262",
+    "question": "What is the minimum height of the lowest portion of the roof deck above the highest aisle or aisle accessway?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 15 feet (4572 mm).",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0231"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0888",
+    "question": "How do IBC and NFPA 101 address guards at open sides and roof hatches?",
+    "category": "Cross-reference",
+    "ground_truth": "NFPA 101 requires guards at open sides of means of egress exceeding 30 inches above the floor or ground (Code_0296). IBC requires guards to extend not less than 30 inches beyond each end of a roof hatch parallel to the roof edge (Code_0142).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0559",
+    "question": "A new business occupancy has a roof hatch with a guard. The guard extends 28 inches beyond each end of the hatch parallel to the roof edge. Is this compliant with IBC?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0564",
+    "question": "In a new mercantile building, a fire escape stair is being installed. A window opening is located 16 ft horizontally from a platform on the fire escape. Is a fire door or fire window assembly required?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0153",
+    "question": "How far must fire-resistance-rated construction extend vertically above the floor level of an area for assisted rescue according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 10 feet (3048 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0034"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0844",
+    "question": "Stairways can have a maximum riser height of 7.5 inches per IBC, correct?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's incorrect. IBC permits a maximum riser height of 8 inches (203 mm), not 7.5 inches.",
+    "expected_code_refs": [
+      "IBC 1011.5.2",
+      "CODE_0100"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0169",
+    "question": "What additional aisle capacity is required for portions without a handrail within 30 inches according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "0.075 inch (1.9 mm) per occupant",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0228"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0473",
+    "question": "What are the letter width and spacing requirements for the word EXIT on exit signs according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Letters of a width not less than 2 in. (51 mm), except the letter I, and minimum spacing between letters not less than 3/8 in. (9.5 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0488"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0458",
+    "question": "How much additional aisle capacity is required per occupant on portions of aisle without a handrail within 30 inches according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 0.075 inch (1.9 mm) of additional aisle capacity for each occupant",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0228"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0889",
+    "question": "What are the requirements for handrail height and clearance between handrails and seating?",
+    "category": "Cross-reference",
+    "ground_truth": "IBC requires handholds to be located between 34 and 42 inches above the bottom landing of the stairway (Code_0116). For stepped aisles serving not more than five rows on one side, the minimum clear width between handrail and seating is 23 inches (Code_0257).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0625",
+    "question": "A new hotel has a corridor serving 80 guest rooms. What is the minimum corridor width?",
+    "category": "Scenario-based",
+    "ground_truth": "For occupant load exceeding 49, minimum corridor width per IBC Table 1020.3 is 44 inches (1118 mm).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0466",
+    "question": "What is the maximum reduction in headroom allowed by door closers and stops according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Not reduce headroom to less than 78 inches (1981 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0013"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0719",
+    "question": "How do the requirements for ramp cross slope and stair tread for change in level interact?",
+    "category": "Cross-reference",
+    "ground_truth": "New ramps max cross slope 1 in 48 (NFPA 101). Stairs for change in level need tread depth min 13 inches (NFPA 101).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0914",
+    "question": "What are the combined requirements for stairway width and egress capacity in assembly seating under IBC?",
+    "category": "Cross-reference",
+    "ground_truth": "Under IBC, for smoke-protected or open-air assembly seating, the minimum clear width shall be 12 inches plus 0.3 inch for each additional seat. This is specific to assembly seating, while general stairway width is 44 inches minimum. These provisions address different egress scenarios.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0567",
+    "question": "A new assembly space has a stepped aisle with treads 21 inches deep. Two adjacent risers have heights of 7.0 and 7.5 inches. Is this variation acceptable per IBC?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_1000",
+    "question": "What fire-resistance rating is required for interior exit stairway enclosures connecting four or more stories according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "2 hours",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0168"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0863",
+    "question": "Signs on the egress side of doors must have letters at least 2 inches high per NFPA 101, correct?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's wrong. It requires not less than 1 inch (25 mm), not 2 inches.",
+    "expected_code_refs": [
+      "NFPA 101 7.10.1.2.1",
+      "CODE_0316"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0490",
+    "question": "How long must a manual release device remain in the open position according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 30 seconds",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0325"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0378",
+    "question": "A new building has a nonpublic aisle serving 60 people and not required to be accessible. What is the minimum width?",
+    "category": "Scenario-based",
+    "ground_truth": "The provision applies only to aisles serving less than 50 people; for 60, the width is not specified by this provision; other requirements may apply.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0910",
+    "question": "What are the requirements for fire-resistance-rated separation in corridors under NFPA 101?",
+    "category": "Cross-reference",
+    "ground_truth": "Under NFPA 101, corridors used as exit access and serving an area having an occupant load exceeding 30 shall be separated from other parts of the building by walls having not less than a 1-hour fire resistance rating. Additionally, the minimum 2-hour fire-resistance-rated separation required by 7.1.3.2.1(3) shall be constructed of an assembly of noncombustible or limited-combustible materials. These provisions ensure fire protection for egress corridors.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0760",
+    "question": "How many fire extinguishers are required in a 20,000 square foot office building?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0223",
+    "question": "In Type B units, what is the maximum threshold height on the exterior side for doors other than sliding doors?",
+    "category": "Direct Match",
+    "ground_truth": "Not exceed 4.5 inches (114 mm) above the exterior deck, patio or balcony.",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0078"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0931",
+    "question": "How do the requirements for handrail clearance in stepped aisles under IBC apply to different seating configurations?",
+    "category": "Cross-reference",
+    "ground_truth": "Under IBC, the minimum clear width between a stepped aisle handrail and seating is 23 inches, regardless of whether the aisle serves more than five rows on one side. This ensures adequate egress width.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_1016",
+    "question": "What is the minimum fire protection rating for openings in barriers separating an area of refuge according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "20 minutes",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0432"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0532",
+    "question": "According to IBC, what is the minimum percentage of the enclosing wall height that an opening must be to be considered open?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 50 percent",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0218"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0171",
+    "question": "How many wheelchair spaces are required in an elevator lobby for each 50 persons of occupant load according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "One wheelchair space of 30 in. × 48 in. (760 mm × 1220 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0504"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0041",
+    "question": "What is the maximum force required to set a door in motion in the direction of travel according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "30 lbf (133 N)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0326"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0427",
+    "question": "What is the minimum clear width at and below a height of 39 inches for turnstiles in required exits according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "16 1/2 in. (420 mm).",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0324"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0152",
+    "question": "In a tiered assembly space with flexible seating, how many seats are allowed not to be fastened to the floor according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Not more than 200 seats",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0249"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0410",
+    "question": "What are the letter height requirements for a readily visible, durable sign on the egress side of each door according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 1 inch (25 mm) high on a contrasting background.",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0316"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0451",
+    "question": "What is the minimum width for nonpublic aisles serving less than 50 people and not required to be accessible per IBC Chapter 11?",
+    "category": "Direct Match",
+    "ground_truth": "28 inches (711 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0185"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0898",
+    "question": "What are the combined requirements for stair width and tread depth for new stairs under NFPA 101 and IBC?",
+    "category": "Cross-reference",
+    "ground_truth": "Under IBC, stairways must have a minimum width of 44 inches. Under NFPA 101, stairways must have a tread depth of not less than 11 inches for a portion of the stairway width sufficient to provide egress capacity for the occupant load served. Additionally, NFPA 101 limits riser heights to 7 inches maximum. These provisions together ensure adequate stair dimensions for safe egress.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0660",
+    "question": "A new hotel has a stair with riser height of 7 inches. Is this compliant?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0893",
+    "question": "What are the combined requirements for marking stripes and emergency exit symbols?",
+    "category": "Cross-reference",
+    "ground_truth": "IBC requires marking stripes to have a width of not less than 1 inch but not more than 2 inches (Code_0103). NFPA 101 requires emergency exit symbols on doors to be a minimum of 4 inches in height (Code_0393).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0522",
+    "question": "What is the maximum force allowed for pushing or pulling open an interior swinging egress door that is manually operated and not fire rated according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "5 pounds (22 N)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0053"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0013",
+    "question": "When more than one means of egress is required, what percentage of the required capacity must remain if one means of egress is lost according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 50 percent",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0439"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0785",
+    "question": "What is the minimum fire separation distance between a building and its property line?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0563",
+    "question": "A new business occupancy has a stair with a handrail that is 39 inches above the tread surface. Is this compliant with NFPA 101 for existing handrails?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0591",
+    "question": "I am designing a new residential building with a spiral stairway. What is the minimum headroom clearance?",
+    "category": "Scenario-based",
+    "ground_truth": "Per IBC CODE_0064, spiral stairways require a minimum headroom clearance of 78 inches (1981 mm).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0491",
+    "question": "What is the minimum required height above the floor for open area openings in exit access according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "42 inches (1067 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0214"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0654",
+    "question": "A new hotel has a stair with treads that are 7 inches deep at a point 12 inches from the narrower edge. Is this compliant?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0196",
+    "question": "What is the minimum width of an egress court for Group R-3 and U occupancies?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 36 inches (914 mm).",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0222"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0306",
+    "question": "What is the minimum clear aisle accessway width?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 12 inches (305 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0237"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0560",
+    "question": "In a new educational building, a stair has a variation in tread depth between the largest and smallest tread of 0.5 inches. Is this acceptable per NFPA 101?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0115",
+    "question": "What is the minimum ceiling height allowed in existing buildings according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "7 ft (2135 mm) from the floor, with projections not less than 6 ft 8 in. (2030 mm) with a tolerance of -3/4 in. (-19 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0300"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0710",
+    "question": "What are the combined requirements for vestibule dimensions and corridor width in retail areas?",
+    "category": "Cross-reference",
+    "ground_truth": "Vestibule must be at least as wide as the corridor and 6 ft in travel direction (NFPA 101). Retail aisle must be at least 44 inches wide (IBC).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0693",
+    "question": "How do the requirements for area wells and exterior exit stairways for Group R-3 dwellings relate?",
+    "category": "Cross-reference",
+    "ground_truth": "Area wells must have a minimum horizontal area of 9 square feet with at least 36 inches in width and projection (IBC). Exterior exit stairways for Group R-3 must have a minimum fire separation distance of 5 feet (IBC).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0211",
+    "question": "What is the minimum clear width for a permanently mounted folding or movable partition?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 16.5 inches (420 mm).",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0304"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0236",
+    "question": "What is the minimum ceiling height requirement for NFPA 101, and what is the minimum height for the remaining ceiling area?",
+    "category": "Direct Match",
+    "ground_truth": "The minimum ceiling height shall be maintained for not less than two-thirds of the ceiling area; the remaining ceiling area shall be not less than 6 ft 8 in. (2030 mm).",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0301"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0916",
+    "question": "What are the requirements for grille hardware marking projections under NFPA 101?",
+    "category": "Cross-reference",
+    "ground_truth": "Under NFPA 101, grille hardware marking projections shall not be more than 4.5 inches at or below handrail height on each side. This ensures that hardware does not obstruct egress or cause injury.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0771",
+    "question": "What is the maximum allowed height of a building in a flood zone?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0672",
+    "question": "I am designing a new mercantile building with an elevator lobby. What is the minimum fire protection rating for the door assembly?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0673",
+    "question": "A new educational building has a stair with a tread depth of 7.5 inches at a point 12 inches from the narrower edge. Is this compliant?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0962",
+    "question": "What is the minimum letter height for a sign on the egress side of a door according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "1 inch (25 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0316"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0873",
+    "question": "The minimum clear width of 48 inches between handrails is not required at stairways serving buildings with fire alarms per IBC, right?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's wrong. The exception applies only to buildings with automatic sprinkler systems per Section 903.3.1.1 or 903.3.1.2, not fire alarms.",
+    "expected_code_refs": [
+      "IBC 1011.2",
+      "CODE_0035"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0454",
+    "question": "Where should exit signs be mounted relative to the door frame according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "On the door or adjacent to the door, with the nearest edge of the sign within 4 in. (100 mm) of the door frame",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0497"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0241",
+    "question": "What are the permitted threshold heights for sliding and side-hinged exterior doors in Group R-2 or R-3?",
+    "category": "Direct Match",
+    "ground_truth": "Up to 7.75 inches (197 mm) in height.",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0077"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0461",
+    "question": "What is the minimum headroom requirement according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "6 ft 8 in. (2030 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0350"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0429",
+    "question": "What is the maximum projection of the leading edge of treads beyond the tread below in millimeters according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "32 mm.",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0106"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0182",
+    "question": "What is the maximum travel distance from any portion of a machinery room to an exit or exit access doorway?",
+    "category": "Direct Match",
+    "ground_truth": "150 feet (45,720 mm).",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0005"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0763",
+    "question": "What is the minimum distance between a building and a property line for fire safety?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0106",
+    "question": "What is the minimum illumination required for externally illuminated exit signs according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 5 foot-candles (54 lux) at the illuminated surface with a contrast ratio of not less than 0.5",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0486"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0537",
+    "question": "A new business office on the 5th floor has a stairway identification sign. What is the minimum height from the floor landing to the bottom of the sign per IBC?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0134",
+    "question": "What is the minimum height for an emergency exit symbol applied on a door according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "4 in. (100 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0393"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0043",
+    "question": "What is the maximum travel distance permitted from a high-hazard contents area to the room door for a single means of egress according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "25 ft (7620 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0512"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0098",
+    "question": "Are horizontal sliding or swinging gates exceeding 4 feet in leaf width permitted in fences and walls surrounding a stadium according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Yes, they are permitted",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0082"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0805",
+    "question": "What are the requirements for carbon monoxide detectors in residential buildings?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0329",
+    "question": "What is the minimum separation distance between an exit access stairway or ramp termination and the exit discharge door?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 30 feet (9144 mm) or not less than one-fourth the length of the maximum overall diagonal dimension of the building, whichever is less",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0211"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0398",
+    "question": "What is the occupant load factor for residential hotels and dormitories according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "200 gross square feet (18.6 square meters) per person.",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0462"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0103",
+    "question": "What is the minimum tread depth for a stair used to accommodate a change in level according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "13 in. (330 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0295"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0856",
+    "question": "Door hardware must be marked with not less than 12 square inches of luminous material per IBC, correct?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's incorrect. IBC requires not less than 16 square inches (10323 mm2) of luminous material, not 12 square inches.",
+    "expected_code_refs": [
+      "IBC 1010.1.9.7",
+      "CODE_0201"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0678",
+    "question": "I am designing a new educational building with a stair that has risers of 8 inches. Is this compliant?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0015",
+    "question": "What is the minimum intensity for an exit sign illuminated from an external source according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "5 footcandles (54 lux)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0136"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0557",
+    "question": "A new mercantile building has a skating rink with an area of 5,000 sq ft. What is the occupant load based on NFPA 101?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0907",
+    "question": "What are the requirements for stairway landing height between landings for replacement fire escape stairs under NFPA 101?",
+    "category": "Cross-reference",
+    "ground_truth": "Under NFPA 101, the maximum height between landings for replacement fire escape stairs is 12 feet. This is specific to replacement fire escape stairs, ensuring safe egress on such structures.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0243",
+    "question": "What capacity must remain if one means of egress is lost when more than one is required?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 50 percent of the required capacity.",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0439"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0453",
+    "question": "What is the minimum width for existing exit discharge paths to a public way according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 28 in. (710 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0491"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0469",
+    "question": "What height defines a high turnstile according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "More than 39 inches (991 mm) high",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0060"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0832",
+    "question": "According to IBC, the minimum tread depth for stairways is 10 inches, correct?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's incorrect. According to IBC 1011.5.2, the minimum tread depth is 9 inches (229 mm), not 10 inches. The user's premise of 10 inches is wrong.",
+    "expected_code_refs": [
+      "IBC 1011.5.2",
+      "CODE_0100"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0960",
+    "question": "What percentage of exits can horizontal exits comprise for Group I-3 occupancies according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "100 percent",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0206"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0940",
+    "question": "What are the combined requirements for stairway landing height and riser height under NFPA 101?",
+    "category": "Cross-reference",
+    "ground_truth": "Under NFPA 101, riser heights shall not exceed 7 inches, and the maximum height between landings for replacement fire escape stairs is 12 feet. These ensure stair safety.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0056",
+    "question": "What are the minimum net clear opening height and width dimensions for emergency escape and rescue openings according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Height: 24 inches (610 mm), Width: 20 inches (508 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0273"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0114",
+    "question": "What is the minimum fire separation distance for exterior exit stairways and ramps serving individual dwelling units in Group R-3 according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "5 feet (1525 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0216"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0078",
+    "question": "For guards at elevated walking surfaces for access to electrical, mechanical, or plumbing systems, what is the maximum opening size allowed according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Openings that allow passage of a sphere 21 inches (533 mm) in diameter are not permitted",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0176"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0830",
+    "question": "What is the minimum clearance around a fire hydrant?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0157",
+    "question": "What is the minimum height above the floor at which smoke level must be maintained in a means of egress according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "6 feet (1829 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0230"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0741",
+    "question": "How many sprinkler heads must be installed in a storage warehouse of 10,000 square feet?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0818",
+    "question": "What is the maximum allowable area for a fire area in a building?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0388",
+    "question": "How many handrails are required where stepped aisles have seating on one side and the aisle width is 74 inches or greater according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Two handrails.",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0252"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0524",
+    "question": "According to IBC, what is the minimum illumination level that must be provided in a dispersal area?",
+    "category": "Direct Match",
+    "ground_truth": "1 footcandle (11 lux)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0028"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0762",
+    "question": "What are the requirements for a fire-resistance-rated window assembly in a stairwell?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0275",
+    "question": "Can the additional width at the outer side of a spiral stairway be counted toward required egress capacity?",
+    "category": "Direct Match",
+    "ground_truth": "No, it shall not be included as part of the required egress capacity.",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0342"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0023",
+    "question": "What is the minimum clear width at and below handrails for ship's ladders according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "20 inches (508 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0128"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0757",
+    "question": "What are the ventilation requirements for a kitchen in a commercial restaurant?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0224",
+    "question": "What is the maximum manual speed control for an existing revolving door with an inside diameter of 10 ft?",
+    "category": "Direct Match",
+    "ground_truth": "8 rpm.",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0335"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0311",
+    "question": "What fire resistance rating is required for shaft system walls separating enclosed exit stairs from the building?",
+    "category": "Direct Match",
+    "ground_truth": "Minimum 2-hour fire resistance rating and minimum 1.5-hour fire-protection-rated opening protectives",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0517"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0036",
+    "question": "What is the maximum credit allowed for revolving doors used as a component of a means of egress according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "50 percent of the minimum width or required capacity",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0092"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0581",
+    "question": "A new mercantile building has a stair with a landing that is 58 inches long. Is this compliant with IBC?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0792",
+    "question": "What are the requirements for fire alarm system monitoring?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0482",
+    "question": "What is the minimum width for existing exit discharge paths to a public way according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 28 in. (710 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0491"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0177",
+    "question": "What is the minimum height of the emergency exit symbol on a door according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "4 in. (100 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0393"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0010",
+    "question": "What is the minimum clear width for door openings to resident sleeping units in Group I-3 that are not required to be accessible units according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "28 inches (711 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0037"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0365",
+    "question": "A new building has a ramp with a rise of 5 inches. Is a handrail required?",
+    "category": "Scenario-based",
+    "ground_truth": "No, handrails are required only for ramps with a rise greater than 6 inches.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0506",
+    "question": "What is the maximum horizontal distance that a handrail must be within the stepped aisle when two handrails are required according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "30 inches (762 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0253"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0037",
+    "question": "How many handrails are required for stepped aisles with seating on one side and a width of 74 inches or greater according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Two handrails",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0252"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0296",
+    "question": "What is the maximum projection into the required width of aisles, stairways, and ramps at each side at or below handrail height?",
+    "category": "Direct Match",
+    "ground_truth": "4.5 inches (114 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0150"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0621",
+    "question": "A new building has a revolving door. Under actuation of an automatic sprinkler system, what is the maximum collapsing force?",
+    "category": "Scenario-based",
+    "ground_truth": "According to NFPA 101 CODE_0321, the force shall not exceed 130 lbf (580 N).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0521",
+    "question": "How much additional width must be provided clear to the other handrail at the outer side of a spiral stairway according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "10 1/2 inches (265 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0342"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0216",
+    "question": "When is the 48-inch clear width between handrails not required?",
+    "category": "Direct Match",
+    "ground_truth": "In buildings equipped throughout with an automatic sprinkler system installed in accordance with Section 903.3.1.1 or 903.3.1.2.",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0032"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0649",
+    "question": "A new educational building has a nonaccessible single-user toilet stall. What is the minimum clear width of the door?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0643",
+    "question": "A new residential building has a sliding door with a threshold height of 0.8 inches above the finished floor. Is this compliant?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0892",
+    "question": "How do IBC and NFPA 101 address corridor separation and fire resistance rating?",
+    "category": "Cross-reference",
+    "ground_truth": "NFPA 101 requires corridors serving an area with occupant load exceeding 30 to be separated by walls with not less than a 1-hour fire resistance rating (Code_0280). IBC requires that exit passageway construction extend vertically from ground to 10 feet above the floor or to the roof line, whichever is lower (Code_0196).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0298",
+    "question": "What is the minimum clear opening height for door openings within a dwelling unit or sleeping unit?",
+    "category": "Direct Match",
+    "ground_truth": "78 inches (1981 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0038"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0492",
+    "question": "What is the maximum number of seats not required to be fastened to the floor in a tiered assembly space where flexibility of seating arrangement is integral according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "200 seats",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0249"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0267",
+    "question": "What size projections are permitted within the means of egress at a height of 38 in. and below?",
+    "category": "Direct Match",
+    "ground_truth": "Not more than 4 1/2 in. (114 mm) on each side.",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0467"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0256",
+    "question": "What is the minimum distance safe dispersal areas must be located from the enclosed space?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 50 feet (15,240 mm).",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0084"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0180",
+    "question": "What is the minimum clearance between a new handrail and the wall according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "2 1/4 in. (57 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0366"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0137",
+    "question": "In Group I-2 occupancies, what is the minimum illumination level on an exterior landing for exit discharge if a single lamp fails according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "1 footcandle (11 lux)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0027"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0198",
+    "question": "What is the maximum rise for any ramp run?",
+    "category": "Direct Match",
+    "ground_truth": "30 inches (762 mm).",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0130"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0117",
+    "question": "What is the minimum width that must be maintained in the means of egress for wheelchair spaces according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 36 inches (915 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0420"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0128",
+    "question": "What is the maximum horizontal projection allowed for a floor opening into required headroom in Group R-3 occupancies according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Not more than 4.75 inches (121 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0065"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0493",
+    "question": "What is the maximum allowable length of dead-end corridors in Group I-2, Condition 2 occupancies that do not serve patient rooms or treatment spaces according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "30 feet (9144 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0160"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0159",
+    "question": "What is the maximum height above finished floor for the bottom edge of a wall-mounted demarcation line according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "4 inches (102 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0198"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0641",
+    "question": "A new mercantile building has a turnstile with a clear width of 20 inches at a height of 40 inches. Is this compliant?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0735",
+    "question": "What are the seismic design requirements for a roof structure in a high-risk zone?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0136",
+    "question": "In Group F occupancies, what is the height range for a guard that also serves as a handrail on exit access stairways serving fewer than three stories according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 34 inches (864 mm) and not more than 38 inches (965 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0172"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0446",
+    "question": "What is the minimum clear width between handrails on ramps that are part of an accessible route according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "36 inches (914 mm) minimum",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0149"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_1048",
+    "question": "What is the minimum distance required between an alternating tread device handrail and any other object according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "6 in. (150 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0426"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0261",
+    "question": "Where should the floor level number be located relative to the stairway identifier, and what size numbers are required?",
+    "category": "Direct Match",
+    "ground_truth": "Located below the stairway identifier in minimum 5 in. (125 mm) high numbers.",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0380"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0467",
+    "question": "When are manually operated edge- or surface-mounted bolts permitted on the inactive leaf of a pair of doors according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Where a pair of doors serves an occupant load of less than 50 persons in a Group B, F or S occupancy",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0045"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0655",
+    "question": "In a new mercantile building, a curtain is installed across an opening that is 5 ft wide. Is this permitted?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0936",
+    "question": "What are the combined requirements for ramp handrail extension and curb height under IBC?",
+    "category": "Cross-reference",
+    "ground_truth": "Under IBC, the floor surface shall extend 12 inches beyond the inside face of a handrail, and a curb shall be not less than 4 inches high. These ensure safety on ramps.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_1002",
+    "question": "What is the maximum occupant load for an occupied exterior area according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "300 occupants",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0043"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0934",
+    "question": "What are the requirements for stairway width and tread depth under NFPA 101 for new stairs?",
+    "category": "Cross-reference",
+    "ground_truth": "Under NFPA 101, new stairs require a tread depth of not less than 11 inches for a portion of the width sufficient for egress capacity. IBC requires a minimum width of 44 inches. These ensure adequate stair dimensions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0613",
+    "question": "A new business occupancy on the 3rd floor has an occupant load of 45. How many exits are required?",
+    "category": "Scenario-based",
+    "ground_truth": "Using occupant load factor of 100 sq ft per person, 45 occupants. For occupant load 45, one exit is permitted only if certain conditions are met (e.g., travel distance less than 75 ft, building not high hazard). Typically two exits are required if occupant load exceeds 30 in non-sprinklered building. The correct answer is 2 exits.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0383",
+    "question": "In a new building, the total egress capacity is 120% of the required capacity. Does this comply?",
+    "category": "Scenario-based",
+    "ground_truth": "Yes, it must be not less than 100 percent, so 120% is acceptable.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0520",
+    "question": "What percentage of the required egress capacity can revolving door openings be credited for according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not more than 50 percent",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0332"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0917",
+    "question": "How do the requirements for ship's ladders under IBC compare to standard stair requirements?",
+    "category": "Cross-reference",
+    "ground_truth": "Under IBC, ship's ladders shall have a minimum tread depth of 5 inches, a projected tread depth plus nosing projection of not less than 8.5 inches, and a maximum riser height of 9.5 inches. Standard stairs require a minimum width of 44 inches and tread depth of 11 inches (under NFPA 101), showing ship's ladders have narrower and steeper dimensions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0812",
+    "question": "How do I determine the occupancy load for a swimming pool area?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0143",
+    "question": "What is the occupant load factor for collaboration rooms or spaces greater than 450 square feet according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "15 gross square feet (1.4 square meters) per person",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0456"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0594",
+    "question": "I am designing a new exit passageway for an occupant load of 30. What is the minimum width?",
+    "category": "Scenario-based",
+    "ground_truth": "Under IBC CODE_0193, exit passageways serving occupant load less than 50 shall be not less than 36 inches (914 mm) in width.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0653",
+    "question": "I am designing a new business office with an alternating tread device. What is the clear width between handrails?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0082",
+    "question": "What is the minimum illumination level required for means of egress paths according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "0.2 foot-candle (2.2 lux)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0515"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0577",
+    "question": "A new residential building has a stair with a tread depth of 22 inches. Two adjacent risers have heights of 7.0 and 7.8 inches. Is this variation acceptable per IBC?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0561",
+    "question": "A new residential building has a ramp with a slope of 1 in 20 in the direction of travel. Is this compliant with NFPA 101?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0668",
+    "question": "In a new educational building, the measurement of required clear width of the aisle or aisle accessway is made from a line parallel to the edge of a table. What is the distance from the edge?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0587",
+    "question": "I am designing a new assembly occupancy with a stadium that has 10,000 occupants. What is the required safe dispersal area between the fence and enclosed space?",
+    "category": "Scenario-based",
+    "ground_truth": "Per IBC CODE_0083, safe dispersal area is 3 square feet per occupant, so 10,000 occupants × 3 sq ft = 30,000 sq ft required.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0919",
+    "question": "How do the requirements for vestibule ceiling height under NFPA 101 relate to door opening height?",
+    "category": "Cross-reference",
+    "ground_truth": "Under NFPA 101, the vestibule ceiling shall be not less than 20 inches higher than the door opening into the vestibule. This ensures adequate headroom in vestibules.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0534",
+    "question": "I am designing a new 10,000 sq ft industrial warehouse with high-hazard storage. What is the occupant load based on NFPA 101?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0500",
+    "question": "What is the illumination level required at the walking surface along exit access stairways and exit stairways when in use according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 10 footcandles (108 lux)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0026"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0724",
+    "question": "What are the combined requirements for dead-end corridor length and wall fire rating?",
+    "category": "Cross-reference",
+    "ground_truth": "Dead-end corridors max 50 feet (IBC). Corridors with occupant load >30 need 1-hour fire rating (NFPA 101).",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0334",
+    "question": "I am designing a new business office on the 3rd floor with an occupant load of 200 people. Using the egress capacity factor for stairways, what is the minimum total stair width required?",
+    "category": "Scenario-based",
+    "ground_truth": "60 inches (200 occupants × 0.3 inch per occupant)",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0663",
+    "question": "A new residential building has a single-user shower compartment that is nonaccessible. What is the minimum clear width of the door?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0774",
+    "question": "What is the minimum size for a bathroom in a commercial building?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0877",
+    "question": "Alternating treads cannot be laterally separated by more than 1.5 inches per NFPA 101, correct?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's wrong. NFPA 101 specifies not more than 2 in. (51 mm), not 1.5 inches.",
+    "expected_code_refs": [
+      "NFPA 101 7.2.2.5.5",
+      "CODE_0427"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0393",
+    "question": "What is the minimum fire protection rating for doors according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than ¾ hour.",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0505"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0351",
+    "question": "A new stairway has a headroom of 6 ft 6 in. Does this comply?",
+    "category": "Scenario-based",
+    "ground_truth": "No, the minimum headroom for new stairs is 6 ft 8 in.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0527",
+    "question": "According to IBC, what is the minimum width for exit passageways serving an occupant load of 50 or more?",
+    "category": "Direct Match",
+    "ground_truth": "44 inches (1118 mm)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0194"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0099",
+    "question": "What is the minimum illumination level at any point allowed after failure of a single lamp in Group I-2 occupancies according to IBC?",
+    "category": "Direct Match",
+    "ground_truth": "0.2 footcandle (2.2 lux)",
+    "expected_code_refs": [
+      "IBC"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0031"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0624",
+    "question": "A new building has a stairway serving a business occupancy with occupant load 100. What is the minimum stair width?",
+    "category": "Scenario-based",
+    "ground_truth": "Per NFPA 101 CODE_0353, minimum stair width is 44 inches (1120 mm) regardless of occupant load.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0424",
+    "question": "What is the required minimum fire-resistance rating for the supporting construction of the separation assembly according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Minimum 2-hour fire resistance rating.",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0279"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0568",
+    "question": "In a new business occupancy, a floor has a variation in elevation due to finish materials of 0.6 inches. Is this compliant with IBC?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0366",
+    "question": "In a new assembly occupancy, the common path of egress travel in a Group S-2 open parking garage is 95 ft. Does this comply?",
+    "category": "Scenario-based",
+    "ground_truth": "Yes, the maximum is 100 ft.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0750",
+    "question": "What is the maximum height of a building without requiring a fire sprinkler system?",
+    "category": "Out-of-scope",
+    "ground_truth": "Out of scope — not covered by NFPA 101 Ch.7 or IBC Ch.10 means of egress provisions.",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": false,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0497",
+    "question": "What is the minimum height of opaque visual obstruction required for fire escape stairs more than 36 ft above ground according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "48 in. (1220 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0501"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0471",
+    "question": "What is the minimum headroom requirement for means of egress according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "Not less than 7 ft 6 in. (2285 mm)",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0293"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0659",
+    "question": "I am designing a new business office with a handrail that has a perimeter greater than 6 1/4 inches. What is the requirement for the finger recess?",
+    "category": "Scenario-based",
+    "ground_truth": "",
+    "expected_code_refs": [],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0428",
+    "question": "What is the minimum clear width at heights above 39 inches for turnstiles in required exits according to NFPA 101?",
+    "category": "Direct Match",
+    "ground_truth": "22 in. (560 mm).",
+    "expected_code_refs": [
+      "NFPA 101"
+    ],
+    "relevant_provision_ids": [
+      "CODE_0324"
+    ],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0841",
+    "question": "Fire escape ladders are permitted for occupancies up to five persons per NFPA 101, correct?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's wrong. NFPA 101 permits them for occupancies not exceeding three persons, not five.",
+    "expected_code_refs": [
+      "NFPA 101 7.2.2.5.6",
+      "CODE_0422"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  },
+  {
+    "id": "RAG_TC_0876",
+    "question": "Existing curved stairs must have a tread depth of not less than 11 inches at a point 12 inches from the narrower end per NFPA 101, right?",
+    "category": "Adversarial",
+    "ground_truth": "No, that's incorrect. NFPA 101 requires not less than 10 in. (255 mm), not 11 inches.",
+    "expected_code_refs": [
+      "NFPA 101 7.2.2.4.2",
+      "CODE_0356"
+    ],
+    "relevant_provision_ids": [],
+    "is_in_scope": true,
+    "ratings": {
+      "Rater_1": null,
+      "Rater_2": null,
+      "Rater_3": null,
+      "Rater_4": null
+    }
+  }
+]
